@@ -10,11 +10,6 @@
 
 @interface StarWarsChar : NSObject
 
-+(instancetype)initWithName:(NSString *)name starWarrior:
-                            (NSString *)starWarrior;
-//                            (NSString *)name homeWorld:
-//                            (NSString *)homeWorld;
-
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *starWarrior;
 @property (strong, nonatomic) NSString *homeWorld;

@@ -25,7 +25,7 @@
     
     self.nameLabel.text = self.theCharacter.name;
     self.occuLabel.text = self.theCharacter.starWarrior;
-//    self.homeLabel.text = self.theCharacter.homeLabel; 
+    self.homeLabel.text = self.theCharacter.homeWorld;
 }
 
 
