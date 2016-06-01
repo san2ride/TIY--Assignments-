@@ -28,60 +28,70 @@
     StarWarsChar *vader = [[StarWarsChar alloc] init];
     vader.name =@"Darth Vader";
     vader.starWarrior =@"Sith Lord";
+//    vader.homeWorld =@"Tatooine";
     
     [self.charactersArray addObject:vader];
     
     StarWarsChar *yoda = [[StarWarsChar alloc] init];
     yoda.name =@"Yoda";
     yoda.starWarrior =@"Jedi Grand Master";
+//    yoda.homeWorld =@"Galactic Republic";
     
     [self.charactersArray addObject:yoda];
     
     StarWarsChar *solo = [[StarWarsChar alloc] init];
     solo.name =@"Han Solo";
     solo.starWarrior =@"Captain, Millennium Falcon";
+//    solo.homeWorld =@"Corellia";
     
     [self.charactersArray addObject:solo];
     
     StarWarsChar *leia = [[StarWarsChar alloc] init];
     leia.name =@"Princess Leia";
     leia.starWarrior =@"Imperial Senate";
+//    leia.homeWorld =@"Alderaan";
     
     [self.charactersArray addObject:leia];
     
     StarWarsChar *chewy = [[StarWarsChar alloc] init];
     chewy.name =@"Chewbacca";
     chewy.starWarrior =@"Co-pilot on Millennium Falcon";
+//    chewy.homeWorld =@"Kashyyk";
     
     [self.charactersArray addObject:chewy];
 
     StarWarsChar *cpo = [[StarWarsChar alloc] init];
     cpo.name =@"C-3PO";
     cpo.starWarrior =@"Protocol Droid";
+//    cpo.homeWorld =@"Galactic Republic";
     
     [self.charactersArray addObject:cpo];
     
     StarWarsChar *rd= [[StarWarsChar alloc] init];
     rd.name =@"R2-D2";
     rd.starWarrior =@"Astromech droid";
+//    rd.homeWorld =@"Naboo";
     
     [self.charactersArray addObject:rd];
     
     StarWarsChar *binks = [[StarWarsChar alloc] init];
     binks.name =@"Jar Jar Binks";
     binks.starWarrior =@"Gungan Grand Army";
+//    binks.homeWorld =@"Naboo";
     
     [self.charactersArray addObject:binks];
     
     StarWarsChar *luke = [[StarWarsChar alloc] init];
     luke.name =@"Luke Skywalker";
     luke.starWarrior =@"Rebel Alliance";
+//    luke.homeWorld =@"Tatooine";
     
     [self.charactersArray addObject:luke];
     
     StarWarsChar *jabba= [[StarWarsChar alloc] init];
     jabba.name =@"Jabba the Hutt";
     jabba.starWarrior =@"Hutt Cartel";
+//    jabba.homeWorld =@"Nal Hutta";
     
     [self.charactersArray addObject:jabba];
 

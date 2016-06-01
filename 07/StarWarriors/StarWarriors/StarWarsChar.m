@@ -11,10 +11,9 @@
 @implementation StarWarsChar
 
 +(instancetype)initWithName:(NSString *)name starWarrior:
-                            (NSString *)starWarrior
-//                            (NSString *)name homeWorld:
-                            {
-    
+                            (NSString *)starWarrior {
+//                            (NSString *)homeWorld
+
     StarWarsChar *theCharacter = [[StarWarsChar alloc] init];
     theCharacter.name = name;
     theCharacter.starWarrior = starWarrior;

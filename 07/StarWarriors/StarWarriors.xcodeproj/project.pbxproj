@@ -45,6 +45,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A403516F1CFF4370003692BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A40351701CFF43B3003692BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A437C4EF1CFE220400CBD507 /* StarWarsChar.h */,
+				A437C4F01CFE220400CBD507 /* StarWarsChar.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A40351711CFF43F8003692BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A437C4DE1CFE20EB00CBD507 /* ViewController.h */,
+				A437C4DF1CFE20EB00CBD507 /* ViewController.m */,
+				A437C4F21CFE222F00CBD507 /* ProfileViewController.h */,
+				A437C4F31CFE222F00CBD507 /* ProfileViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A40351721CFF4425003692BF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A437C4DB1CFE20EB00CBD507 /* AppDelegate.h */,
+				A437C4DC1CFE20EB00CBD507 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
 		A437C4CC1CFE20EB00CBD507 = {
 			isa = PBXGroup;
 			children = (
@@ -64,15 +100,11 @@
 		A437C4D71CFE20EB00CBD507 /* StarWarriors */ = {
 			isa = PBXGroup;
 			children = (
-				A437C4DB1CFE20EB00CBD507 /* AppDelegate.h */,
-				A437C4DC1CFE20EB00CBD507 /* AppDelegate.m */,
-				A437C4DE1CFE20EB00CBD507 /* ViewController.h */,
-				A437C4DF1CFE20EB00CBD507 /* ViewController.m */,
+				A40351701CFF43B3003692BF /* Models */,
+				A403516F1CFF4370003692BF /* View */,
+				A40351711CFF43F8003692BF /* Controllers */,
+				A40351721CFF4425003692BF /* AppDelegate */,
 				A437C4E11CFE20EB00CBD507 /* Main.storyboard */,
-				A437C4EF1CFE220400CBD507 /* StarWarsChar.h */,
-				A437C4F01CFE220400CBD507 /* StarWarsChar.m */,
-				A437C4F21CFE222F00CBD507 /* ProfileViewController.h */,
-				A437C4F31CFE222F00CBD507 /* ProfileViewController.m */,
 				A437C4E41CFE20EB00CBD507 /* Assets.xcassets */,
 				A437C4E61CFE20EB00CBD507 /* LaunchScreen.storyboard */,
 				A437C4E91CFE20EB00CBD507 /* Info.plist */,
@@ -312,6 +344,7 @@
 				A437C4EE1CFE20EB00CBD507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
