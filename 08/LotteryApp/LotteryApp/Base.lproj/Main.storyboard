@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cjo-YO-afA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Lotto Table View Controller-->
+        <scene sceneID="R2R-hR-lmc">
+            <objects>
+                <tableViewController id="vpZ-H3-HqI" customClass="LottoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jKc-uL-XfT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketCell" id="p1W-Rt-hGm">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p1W-Rt-hGm" id="7hi-fb-uX7">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vpZ-H3-HqI" id="sKS-JW-Kv2"/>
+                            <outlet property="delegate" destination="vpZ-H3-HqI" id="BeY-PZ-yNM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Hh9-BF-UZ0">
+                        <barButtonItem key="leftBarButtonItem" title="Check Ticket" id="Yk6-BL-i6u">
+                            <connections>
+                                <action selector="checkButton:" destination="vpZ-H3-HqI" id="gW7-id-aC9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DdQ-TR-TN9">
+                            <connections>
+                                <action selector="addButton:" destination="vpZ-H3-HqI" id="Qgu-ap-ev2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="PickerSegue" id="gpd-Ql-Qvh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9T-Xm-99U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="242"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntm-K0-7Bg">
+                                <rect key="frame" x="25" y="104" width="550" height="456"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zKW-58-FSH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MqE-9s-GZy"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ntm-K0-7Bg" secondAttribute="bottom" constant="40" id="JaV-AP-f3s"/>
+                            <constraint firstItem="ntm-K0-7Bg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Q0w-76-w1f"/>
+                            <constraint firstItem="ntm-K0-7Bg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="sfS-A1-ZOX"/>
+                            <constraint firstAttribute="trailing" secondItem="ntm-K0-7Bg" secondAttribute="trailing" constant="25" id="yli-Rk-J2T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TNr-xP-TyZ"/>
+                    <connections>
+                        <outlet property="pickerView" destination="ntm-K0-7Bg" id="dva-nU-fdp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513" y="-538"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xvv-Qx-8Ny">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cjo-YO-afA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NGb-a7-NNS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vpZ-H3-HqI" kind="relationship" relationship="rootViewController" id="Ojm-lu-TAx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVi-KJ-7m1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="-522"/>
+        </scene>
+    </scenes>
+</document>

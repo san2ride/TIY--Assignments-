@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A40351FD1CFF92A1003692BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A40351FC1CFF92A1003692BF /* main.m */; };
+		A40352001CFF92A1003692BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A40351FF1CFF92A1003692BF /* AppDelegate.m */; };
+		A40352061CFF92A1003692BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40352041CFF92A1003692BF /* Main.storyboard */; };
+		A40352081CFF92A1003692BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40352071CFF92A1003692BF /* Assets.xcassets */; };
+		A403520B1CFF92A1003692BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40352091CFF92A1003692BF /* LaunchScreen.storyboard */; };
+		A40352171CFF93E0003692BF /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40352161CFF93E0003692BF /* PickerViewController.m */; };
+		A403521A1CFF9444003692BF /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = A40352191CFF9444003692BF /* Ticket.m */; };
+		A403521D1CFF9E7A003692BF /* LottoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A403521C1CFF9E7A003692BF /* LottoTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A40351F81CFF92A1003692BF /* LotteryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotteryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40351FC1CFF92A1003692BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A40351FE1CFF92A1003692BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A40351FF1CFF92A1003692BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A40352051CFF92A1003692BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A40352071CFF92A1003692BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A403520A1CFF92A1003692BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A403520C1CFF92A1003692BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A40352151CFF93E0003692BF /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		A40352161CFF93E0003692BF /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		A40352181CFF9444003692BF /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ticket.h; path = ../Ticket.h; sourceTree = "<group>"; };
+		A40352191CFF9444003692BF /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ticket.m; path = ../Ticket.m; sourceTree = "<group>"; };
+		A403521B1CFF9E7A003692BF /* LottoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottoTableViewController.h; sourceTree = "<group>"; };
+		A403521C1CFF9E7A003692BF /* LottoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottoTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40351F51CFF92A1003692BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40351EF1CFF92A0003692BF = {
+			isa = PBXGroup;
+			children = (
+				A40351FA1CFF92A1003692BF /* LotteryApp */,
+				A40351F91CFF92A1003692BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40351F91CFF92A1003692BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A40351F81CFF92A1003692BF /* LotteryApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40351FA1CFF92A1003692BF /* LotteryApp */ = {
+			isa = PBXGroup;
+			children = (
+				A403521E1CFFFD5A003692BF /* AppDelegate */,
+				A40352121CFF92C6003692BF /* Models */,
+				A403521F1D000562003692BF /* Views */,
+				A40352131CFF92E1003692BF /* Controller */,
+				A40352041CFF92A1003692BF /* Main.storyboard */,
+				A40352071CFF92A1003692BF /* Assets.xcassets */,
+				A40352091CFF92A1003692BF /* LaunchScreen.storyboard */,
+				A403520C1CFF92A1003692BF /* Info.plist */,
+				A40351FB1CFF92A1003692BF /* Supporting Files */,
+			);
+			path = LotteryApp;
+			sourceTree = "<group>";
+		};
+		A40351FB1CFF92A1003692BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A40351FC1CFF92A1003692BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A40352121CFF92C6003692BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A40352181CFF9444003692BF /* Ticket.h */,
+				A40352191CFF9444003692BF /* Ticket.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A40352131CFF92E1003692BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A40352151CFF93E0003692BF /* PickerViewController.h */,
+				A40352161CFF93E0003692BF /* PickerViewController.m */,
+				A403521B1CFF9E7A003692BF /* LottoTableViewController.h */,
+				A403521C1CFF9E7A003692BF /* LottoTableViewController.m */,
+				A40352141CFF9311003692BF /* Views */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A40352141CFF9311003692BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A403521E1CFFFD5A003692BF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A40351FE1CFF92A1003692BF /* AppDelegate.h */,
+				A40351FF1CFF92A1003692BF /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A403521F1D000562003692BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A40351F71CFF92A1003692BF /* LotteryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A403520F1CFF92A1003692BF /* Build configuration list for PBXNativeTarget "LotteryApp" */;
+			buildPhases = (
+				A40351F41CFF92A1003692BF /* Sources */,
+				A40351F51CFF92A1003692BF /* Frameworks */,
+				A40351F61CFF92A1003692BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LotteryApp;
+			productName = LotteryApp;
+			productReference = A40351F81CFF92A1003692BF /* LotteryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A40351F01CFF92A0003692BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "trvl, LLC";
+				TargetAttributes = {
+					A40351F71CFF92A1003692BF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = A40351F31CFF92A0003692BF /* Build configuration list for PBXProject "LotteryApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40351EF1CFF92A0003692BF;
+			productRefGroup = A40351F91CFF92A1003692BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A40351F71CFF92A1003692BF /* LotteryApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A40351F61CFF92A1003692BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A403520B1CFF92A1003692BF /* LaunchScreen.storyboard in Resources */,
+				A40352081CFF92A1003692BF /* Assets.xcassets in Resources */,
+				A40352061CFF92A1003692BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A40351F41CFF92A1003692BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A403521A1CFF9444003692BF /* Ticket.m in Sources */,
+				A40352001CFF92A1003692BF /* AppDelegate.m in Sources */,
+				A40352171CFF93E0003692BF /* PickerViewController.m in Sources */,
+				A40351FD1CFF92A1003692BF /* main.m in Sources */,
+				A403521D1CFF9E7A003692BF /* LottoTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A40352041CFF92A1003692BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A40352051CFF92A1003692BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A40352091CFF92A1003692BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A403520A1CFF92A1003692BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A403520D1CFF92A1003692BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A403520E1CFF92A1003692BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A40352101CFF92A1003692BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LotteryApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.LotteryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A40352111CFF92A1003692BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LotteryApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.LotteryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A40351F31CFF92A0003692BF /* Build configuration list for PBXProject "LotteryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A403520D1CFF92A1003692BF /* Debug */,
+				A403520E1CFF92A1003692BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A403520F1CFF92A1003692BF /* Build configuration list for PBXNativeTarget "LotteryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A40352101CFF92A1003692BF /* Debug */,
+				A40352111CFF92A1003692BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A40351F01CFF92A0003692BF /* Project object */;
+}
