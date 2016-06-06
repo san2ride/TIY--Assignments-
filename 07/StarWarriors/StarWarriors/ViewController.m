@@ -136,7 +136,6 @@
         
     }
     
-//    NSLog(@"prepare for segue called with identifier == %@", segue.identifier);
     
     ProfileViewController *profileController = (ProfileViewController *)segue.destinationViewController;
     

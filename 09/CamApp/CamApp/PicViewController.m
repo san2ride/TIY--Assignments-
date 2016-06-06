@@ -9,7 +9,7 @@
 #import "PicViewController.h"
 
 @interface PicViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *picImageView;
+
 
 @end
 

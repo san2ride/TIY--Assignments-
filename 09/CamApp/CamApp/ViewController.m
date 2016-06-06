@@ -55,6 +55,8 @@
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
     [self.pickerController dismissViewControllerAnimated:YES completion:nil];
+    
+    
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
