@@ -40,28 +40,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c83-wD-CSk">
-                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c83-wD-CSk">
+                                <rect key="frame" x="150" y="0.0" width="300" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="334" id="63L-ky-dO7"/>
+                                    <constraint firstAttribute="width" constant="300" id="vR8-0Z-hdQ"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcd-S3-WBn">
+                                <rect key="frame" x="279" y="409" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="c83-wD-CSk" secondAttribute="trailing" id="7Zp-XY-KRK"/>
-                            <constraint firstItem="MPX-GI-fCk" firstAttribute="top" secondItem="c83-wD-CSk" secondAttribute="bottom" id="FNq-ci-Dfq"/>
-                            <constraint firstItem="c83-wD-CSk" firstAttribute="top" secondItem="UH3-8M-89J" secondAttribute="bottom" id="Weu-aN-bqN"/>
-                            <constraint firstItem="c83-wD-CSk" firstAttribute="leading" secondItem="GRJ-QY-AkH" secondAttribute="leading" id="gMb-yG-r8f"/>
+                            <constraint firstItem="dcd-S3-WBn" firstAttribute="centerX" secondItem="GRJ-QY-AkH" secondAttribute="centerX" id="1Ad-wS-DkU"/>
+                            <constraint firstItem="c83-wD-CSk" firstAttribute="centerX" secondItem="GRJ-QY-AkH" secondAttribute="centerX" id="7Sy-P3-ThX"/>
+                            <constraint firstItem="dcd-S3-WBn" firstAttribute="top" secondItem="c83-wD-CSk" secondAttribute="bottom" constant="75" id="K47-y6-CCy"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="muviImageView" destination="GRJ-QY-AkH" id="IjL-1Q-DxD"/>
-                        <outlet property="picImageView" destination="c83-wD-CSk" id="a4y-G6-QzS"/>
+                        <outlet property="picImageView" destination="c83-wD-CSk" id="HfX-4c-Es5"/>
+                        <outlet property="titleLabel" destination="dcd-S3-WBn" id="Fek-DM-kUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSH-oG-V5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="-1006"/>
+            <point key="canvasLocation" x="1248" y="-983"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JGz-BT-jus">

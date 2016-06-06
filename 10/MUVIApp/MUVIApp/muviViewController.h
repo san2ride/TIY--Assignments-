@@ -10,7 +10,7 @@
 #import "PosterImage.h"
 
 @interface muviViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *picImageView;
+
 
 @property (strong, nonatomic) PosterImage *theMuvi;
 

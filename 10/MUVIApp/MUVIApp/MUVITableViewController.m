@@ -12,9 +12,8 @@
 
 @interface MUVITableViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) IBOutlet UITableView *muviTableView;
 @property (strong, nonatomic) NSMutableArray *moviesArray;
-@property (strong, nonatomic) PosterImage *currentCharacter;
+@property (strong, nonatomic) PosterImage *currentMovie;
 
 
 @end
@@ -37,8 +36,6 @@
     
     NSString *jsonString = [[NSString alloc] initWithContentsOfFile:filePath
                                                            encoding:NSUTF8StringEncoding error:NULL];
-    NSLog(@"%@", jsonString);
-    
     NSError *error = nil;
     
     NSData *data = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
@@ -71,7 +68,7 @@
                 pi.posterPath = posterPath;
             } else {
                 pi.posterPath =@"";
-                NSLog(@"Could not parse powers field");
+            NSLog(@"Could not parse powers field");
             }
             
             if (pi != nil) {
@@ -85,13 +82,13 @@
         NSLog(@"Could not parse json into NSDictionary");
     }
     
-    UIImage *myImage = [self imageFromURLString:@"http://image.tmdb.org/t/p/w500/jjBgi2r5cRt36xF6iNUEhzscEcb.jpg"];
-    
-    if (myImage == nil) {
-        NSLog(@"Could not load the iamge");
-    } else {
-        NSLog(@"Got the image!");
-    }
+//    UIImage *myImage = [self imageFromURLString:@"http://image.tmdb.org/t/p/w500/jjBgi2r5cRt36xF6iNUEhzscEcb.jpg"];
+//    
+//    if (myImage == nil) {
+//        NSLog(@"Could not load the iamge");
+//    } else {
+//        NSLog(@"Got the image!");
+//    }
     
 }
 
@@ -104,10 +101,10 @@
     NSLog(@"Attempting to Load urlString == %@", urlString);
     
     
-    if(url != nil) {
+    if(url) {
         NSData *data = [NSData dataWithContentsOfURL:url];
         
-        if(data != nil) {
+        if(data) {
             theImage = [UIImage imageWithData:data];
         }
     }
@@ -119,11 +116,18 @@
     
     UITableViewCell *cell = [muviTableView dequeueReusableCellWithIdentifier:@"Muvi" forIndexPath:indexPath];
     
-    self.currentCharacter = [self.moviesArray objectAtIndex:indexPath.row];
+    PosterImage *theMuvi = [self.moviesArray objectAtIndex:indexPath.row];
     
-//    cell.textLabel.text = self.currentCharacter.muvi;
+    cell.textLabel.text = theMuvi.originalTitle;
+    
+    UIImage *theImage = [self imageFromURLString:theMuvi.posterPath];
+    
+    cell.imageView.image = theImage;
     
     return cell;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)muviTableView {
+    return 1;
 }
 
 - (NSInteger)muviTableView:(UITableView *)muviTableView numberOfRowsInSection:(NSInteger)section {
@@ -132,27 +136,22 @@
 }
 
 -(void)muviTableView:(UITableView *)muviTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NSLog(@"I clicked on row %ld", indexPath.row);
     
-    self.currentCharacter = [self.moviesArray objectAtIndex:indexPath.row];
+    self.currentMovie = [self.moviesArray objectAtIndex:indexPath.row];
     
     [self performSegueWithIdentifier:@"MuviSegue" sender:self];
     
-}
--(void)reset {
-    NSLog(@"Reset");
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
         
     if ([segue.identifier isEqualToString:@"MuviSegue"]) {
         
-    NSLog(@"prepare for segue called with identifier ==%@", segue.identifier);
-
-}
     muviViewController *muviController = (muviViewController *)segue.destinationViewController;
     
-    muviController.theMuvi = self.currentCharacter;
+    muviController.theMuvi = self.currentMovie;
 
 }
 
@@ -162,6 +161,7 @@
 //        <true/>
 //    </dict>
 
+}
 @end
 
 /*
