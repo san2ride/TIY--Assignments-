@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A455F47D1D06247E00B8B248 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A455F47C1D06247E00B8B248 /* main.m */; };
+		A455F4801D06247E00B8B248 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A455F47F1D06247E00B8B248 /* AppDelegate.m */; };
+		A455F4861D06247E00B8B248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A455F4841D06247E00B8B248 /* Main.storyboard */; };
+		A455F4881D06247E00B8B248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A455F4871D06247E00B8B248 /* Assets.xcassets */; };
+		A455F48B1D06247E00B8B248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A455F4891D06247E00B8B248 /* LaunchScreen.storyboard */; };
+		A455F4961D06254300B8B248 /* Jones.m in Sources */ = {isa = PBXBuildFile; fileRef = A455F4951D06254300B8B248 /* Jones.m */; };
+		A455F49A1D06372000B8B248 /* IndyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A455F4991D06372000B8B248 /* IndyTableViewController.m */; };
+		A455F49C1D06964300B8B248 /* jones.json in Resources */ = {isa = PBXBuildFile; fileRef = A455F49B1D06964300B8B248 /* jones.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A455F4781D06247E00B8B248 /* IndyJonesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndyJonesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A455F47C1D06247E00B8B248 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A455F47E1D06247E00B8B248 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A455F47F1D06247E00B8B248 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A455F4851D06247E00B8B248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A455F4871D06247E00B8B248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A455F48A1D06247E00B8B248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A455F48C1D06247E00B8B248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A455F4941D06254300B8B248 /* Jones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jones.h; path = ../Jones.h; sourceTree = "<group>"; };
+		A455F4951D06254300B8B248 /* Jones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jones.m; path = ../Jones.m; sourceTree = "<group>"; };
+		A455F4981D06372000B8B248 /* IndyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndyTableViewController.h; sourceTree = "<group>"; };
+		A455F4991D06372000B8B248 /* IndyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndyTableViewController.m; sourceTree = "<group>"; };
+		A455F49B1D06964300B8B248 /* jones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jones.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A455F4751D06247E00B8B248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A455F46F1D06247E00B8B248 = {
+			isa = PBXGroup;
+			children = (
+				A455F47A1D06247E00B8B248 /* IndyJonesApp */,
+				A455F4791D06247E00B8B248 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A455F4791D06247E00B8B248 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A455F4781D06247E00B8B248 /* IndyJonesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A455F47A1D06247E00B8B248 /* IndyJonesApp */ = {
+			isa = PBXGroup;
+			children = (
+				A455F47E1D06247E00B8B248 /* AppDelegate.h */,
+				A455F47F1D06247E00B8B248 /* AppDelegate.m */,
+				A455F4931D06251400B8B248 /* Modals */,
+				A455F4971D0625C800B8B248 /* Views */,
+				A455F4921D06250100B8B248 /* Controller */,
+				A455F4841D06247E00B8B248 /* Main.storyboard */,
+				A455F49B1D06964300B8B248 /* jones.json */,
+				A455F4871D06247E00B8B248 /* Assets.xcassets */,
+				A455F4891D06247E00B8B248 /* LaunchScreen.storyboard */,
+				A455F48C1D06247E00B8B248 /* Info.plist */,
+				A455F47B1D06247E00B8B248 /* Supporting Files */,
+			);
+			path = IndyJonesApp;
+			sourceTree = "<group>";
+		};
+		A455F47B1D06247E00B8B248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A455F47C1D06247E00B8B248 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A455F4921D06250100B8B248 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A455F4981D06372000B8B248 /* IndyTableViewController.h */,
+				A455F4991D06372000B8B248 /* IndyTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A455F4931D06251400B8B248 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				A455F4941D06254300B8B248 /* Jones.h */,
+				A455F4951D06254300B8B248 /* Jones.m */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		A455F4971D0625C800B8B248 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A455F4771D06247E00B8B248 /* IndyJonesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A455F48F1D06247E00B8B248 /* Build configuration list for PBXNativeTarget "IndyJonesApp" */;
+			buildPhases = (
+				A455F4741D06247E00B8B248 /* Sources */,
+				A455F4751D06247E00B8B248 /* Frameworks */,
+				A455F4761D06247E00B8B248 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndyJonesApp;
+			productName = IndyJonesApp;
+			productReference = A455F4781D06247E00B8B248 /* IndyJonesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A455F4701D06247E00B8B248 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "trvl, LLC";
+				TargetAttributes = {
+					A455F4771D06247E00B8B248 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = A455F4731D06247E00B8B248 /* Build configuration list for PBXProject "IndyJonesApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A455F46F1D06247E00B8B248;
+			productRefGroup = A455F4791D06247E00B8B248 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A455F4771D06247E00B8B248 /* IndyJonesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A455F4761D06247E00B8B248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A455F48B1D06247E00B8B248 /* LaunchScreen.storyboard in Resources */,
+				A455F4881D06247E00B8B248 /* Assets.xcassets in Resources */,
+				A455F49C1D06964300B8B248 /* jones.json in Resources */,
+				A455F4861D06247E00B8B248 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A455F4741D06247E00B8B248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A455F49A1D06372000B8B248 /* IndyTableViewController.m in Sources */,
+				A455F4961D06254300B8B248 /* Jones.m in Sources */,
+				A455F4801D06247E00B8B248 /* AppDelegate.m in Sources */,
+				A455F47D1D06247E00B8B248 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A455F4841D06247E00B8B248 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A455F4851D06247E00B8B248 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A455F4891D06247E00B8B248 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A455F48A1D06247E00B8B248 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A455F48D1D06247E00B8B248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A455F48E1D06247E00B8B248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A455F4901D06247E00B8B248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IndyJonesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.IndyJonesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A455F4911D06247E00B8B248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IndyJonesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.IndyJonesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A455F4731D06247E00B8B248 /* Build configuration list for PBXProject "IndyJonesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A455F48D1D06247E00B8B248 /* Debug */,
+				A455F48E1D06247E00B8B248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A455F48F1D06247E00B8B248 /* Build configuration list for PBXNativeTarget "IndyJonesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A455F4901D06247E00B8B248 /* Debug */,
+				A455F4911D06247E00B8B248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A455F4701D06247E00B8B248 /* Project object */;
+}
