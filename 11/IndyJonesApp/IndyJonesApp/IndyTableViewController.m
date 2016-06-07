@@ -85,13 +85,17 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-            return 1;
+    return self.postsArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+
     
+    Jones *theJones = [self.postsArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = theJones.name;
     
     return cell;
 }

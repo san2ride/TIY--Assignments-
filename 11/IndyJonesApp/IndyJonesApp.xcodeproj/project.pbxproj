@@ -334,6 +334,7 @@
 				A455F4911D06247E00B8B248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
