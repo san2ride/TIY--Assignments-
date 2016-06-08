@@ -11,7 +11,7 @@
 
 @interface IndyTableViewController ()
 @property (strong, nonatomic) NSMutableArray *postsArray;
-@property (strong, nonatomic) Jones *currentCharacter;
+
 @end
 
 @implementation IndyTableViewController
@@ -19,9 +19,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    
-
     
     self.postsArray = [[NSMutableArray alloc] init];
     
@@ -100,10 +97,8 @@
     return cell;
 }
 
-- (IBAction)indyButton:(UIBarButtonItem *)sender {
 
-    NSLog(@"Post");
-}
+
 -(NSString *)stringFromJSONFile {
     NSString *str = [[NSString alloc] init];
     
