@@ -1,0 +1,489 @@
+{
+	"href": "https://api.spotify.com/v1/artists/5K4W6rqBFWDnAN6FQUkS6x/albums?offset=0&limit=20&album_type=single,album,compilation,appears_on,ep",
+	"items": [{
+		"album_type": "album",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/0S3BCTCKEJAfIWM1DYrvFJ"
+		},
+		"href": "https://api.spotify.com/v1/albums/0S3BCTCKEJAfIWM1DYrvFJ",
+		"id": "0S3BCTCKEJAfIWM1DYrvFJ",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/6c2a8de85c0ca1baf556401b9b672903d8f76954",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/cb68c3b2517700531ecf91728fb0897cff715d9b",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/61a990b59f8eaabc846b201defb0121bb92963eb",
+			"width": 64
+		}],
+		"name": "The Life Of Pablo",
+		"type": "album",
+		"uri": "spotify:album:0S3BCTCKEJAfIWM1DYrvFJ"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/0WAuEfa5Lmg72xfydLVcca"
+		},
+		"href": "https://api.spotify.com/v1/albums/0WAuEfa5Lmg72xfydLVcca",
+		"id": "0WAuEfa5Lmg72xfydLVcca",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/443372cd2c6d4245833fb46ac1c5dabca00c78a9",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/d2351cd8009379e06421c31fe7de3f87178b4e66",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/4c9fcc4c6f9408a4111f963143d8d13fb58df2b3",
+			"width": 64
+		}],
+		"name": "The Life Of Pablo",
+		"type": "album",
+		"uri": "spotify:album:0WAuEfa5Lmg72xfydLVcca"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/0XTAmejG8F97wF5MWoVbaY"
+		},
+		"href": "https://api.spotify.com/v1/albums/0XTAmejG8F97wF5MWoVbaY",
+		"id": "0XTAmejG8F97wF5MWoVbaY",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/6cc4c17116db6be3284c4f0ee26907c4d430edad",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/e9c4a885ebb690d5e5343b0dbb65ae54788ba973",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/8e9ac7df012e3223030dd56b172944afa28fd4ce",
+			"width": 64
+		}],
+		"name": "Yeezus",
+		"type": "album",
+		"uri": "spotify:album:0XTAmejG8F97wF5MWoVbaY"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/7D2NdGvBHIavgLhmcwhluK"
+		},
+		"href": "https://api.spotify.com/v1/albums/7D2NdGvBHIavgLhmcwhluK",
+		"id": "7D2NdGvBHIavgLhmcwhluK",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/30f1e8a854cfe95593e29b05f9d56d8f624514ad",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/c24892614ef7d029e66d31ca64addd0d563f4fcc",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/ffb9561c4664f74253e23d8dcd965e515e059260",
+			"width": 64
+		}],
+		"name": "Yeezus",
+		"type": "album",
+		"uri": "spotify:album:7D2NdGvBHIavgLhmcwhluK"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/0OcMap99vLEeGkBCfCwRwS"
+		},
+		"href": "https://api.spotify.com/v1/albums/0OcMap99vLEeGkBCfCwRwS",
+		"id": "0OcMap99vLEeGkBCfCwRwS",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/c7886a6daa88dfccf1c32f4cd3d1d34a0f98c444",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/9a1f5d77af8b6a4878d4e60f4da382839b9c6ce3",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/9bcd78a96771e24719b24821d4582cef45101fd9",
+			"width": 64
+		}],
+		"name": "Watch The Throne (Explicit Version)",
+		"type": "album",
+		"uri": "spotify:album:0OcMap99vLEeGkBCfCwRwS"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/7mCeLbChyegbRwwKK5shJs"
+		},
+		"href": "https://api.spotify.com/v1/albums/7mCeLbChyegbRwwKK5shJs",
+		"id": "7mCeLbChyegbRwwKK5shJs",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/d794460520c3ace23242ab5dd2be938695723848",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/b0443fdcf536d6d8c462ee86b2353df741352003",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/3660c165605629c94a9f6d04cd3deabc79460077",
+			"width": 64
+		}],
+		"name": "Watch The Throne (Explicit Version)",
+		"type": "album",
+		"uri": "spotify:album:7mCeLbChyegbRwwKK5shJs"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CR", "DO", "GT", "HN", "NI", "PA", "SV"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/2gJyLhpZSlDiBjN0CV8XTr"
+		},
+		"href": "https://api.spotify.com/v1/albums/2gJyLhpZSlDiBjN0CV8XTr",
+		"id": "2gJyLhpZSlDiBjN0CV8XTr",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/c7886a6daa88dfccf1c32f4cd3d1d34a0f98c444",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/9a1f5d77af8b6a4878d4e60f4da382839b9c6ce3",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/9bcd78a96771e24719b24821d4582cef45101fd9",
+			"width": 64
+		}],
+		"name": "Watch The Throne (Edited Version)",
+		"type": "album",
+		"uri": "spotify:album:2gJyLhpZSlDiBjN0CV8XTr"
+	}, {
+		"album_type": "album",
+		"available_markets": ["ID", "MY", "PL", "TR"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/6Oa0ZYzr4VdFIz3zNmYJYQ"
+		},
+		"href": "https://api.spotify.com/v1/albums/6Oa0ZYzr4VdFIz3zNmYJYQ",
+		"id": "6Oa0ZYzr4VdFIz3zNmYJYQ",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/05a342cc372011517ecd96b1bef62853a543b64c",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/8825c2ba09ac2f6faab31effb55a53b64c2fa735",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/19be295ff13179c2f1f0490f277d72f2e858fbc8",
+			"width": 64
+		}],
+		"name": "Watch The Throne (Edited Version)",
+		"type": "album",
+		"uri": "spotify:album:6Oa0ZYzr4VdFIz3zNmYJYQ"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/0eZRIt3Ht1IuMXsr0QR8OY"
+		},
+		"href": "https://api.spotify.com/v1/albums/0eZRIt3Ht1IuMXsr0QR8OY",
+		"id": "0eZRIt3Ht1IuMXsr0QR8OY",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/d794460520c3ace23242ab5dd2be938695723848",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/b0443fdcf536d6d8c462ee86b2353df741352003",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/3660c165605629c94a9f6d04cd3deabc79460077",
+			"width": 64
+		}],
+		"name": "Watch The Throne (Edited Version)",
+		"type": "album",
+		"uri": "spotify:album:0eZRIt3Ht1IuMXsr0QR8OY"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/2P2Xwvh2xWXIZ1OWY9S9o5"
+		},
+		"href": "https://api.spotify.com/v1/albums/2P2Xwvh2xWXIZ1OWY9S9o5",
+		"id": "2P2Xwvh2xWXIZ1OWY9S9o5",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/c7886a6daa88dfccf1c32f4cd3d1d34a0f98c444",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/9a1f5d77af8b6a4878d4e60f4da382839b9c6ce3",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/9bcd78a96771e24719b24821d4582cef45101fd9",
+			"width": 64
+		}],
+		"name": "Watch The Throne [Deluxe Edition (Explicit)]",
+		"type": "album",
+		"uri": "spotify:album:2P2Xwvh2xWXIZ1OWY9S9o5"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/1YwzJz7CrV9fd9Qeb6oo1d"
+		},
+		"href": "https://api.spotify.com/v1/albums/1YwzJz7CrV9fd9Qeb6oo1d",
+		"id": "1YwzJz7CrV9fd9Qeb6oo1d",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/d794460520c3ace23242ab5dd2be938695723848",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/b0443fdcf536d6d8c462ee86b2353df741352003",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/3660c165605629c94a9f6d04cd3deabc79460077",
+			"width": 64
+		}],
+		"name": "Watch The Throne [Deluxe Edition (Explicit)]",
+		"type": "album",
+		"uri": "spotify:album:1YwzJz7CrV9fd9Qeb6oo1d"
+	}, {
+		"album_type": "album",
+		"available_markets": ["ES", "HU", "IS", "MY", "NO", "PH", "PL", "PT", "TR"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/2IC7s3KVP6ottxQUnkm4eS"
+		},
+		"href": "https://api.spotify.com/v1/albums/2IC7s3KVP6ottxQUnkm4eS",
+		"id": "2IC7s3KVP6ottxQUnkm4eS",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/05a342cc372011517ecd96b1bef62853a543b64c",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/8825c2ba09ac2f6faab31effb55a53b64c2fa735",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/19be295ff13179c2f1f0490f277d72f2e858fbc8",
+			"width": 64
+		}],
+		"name": "Watch The Throne [Deluxe Edition (Edited)]",
+		"type": "album",
+		"uri": "spotify:album:2IC7s3KVP6ottxQUnkm4eS"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/4P63UgNDUcF11MnWzyvVrh"
+		},
+		"href": "https://api.spotify.com/v1/albums/4P63UgNDUcF11MnWzyvVrh",
+		"id": "4P63UgNDUcF11MnWzyvVrh",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/d794460520c3ace23242ab5dd2be938695723848",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/b0443fdcf536d6d8c462ee86b2353df741352003",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/3660c165605629c94a9f6d04cd3deabc79460077",
+			"width": 64
+		}],
+		"name": "Watch The Throne [Deluxe Edition (Edited)]",
+		"type": "album",
+		"uri": "spotify:album:4P63UgNDUcF11MnWzyvVrh"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/6LBiuhK7PZKjVXyMfPxPoh"
+		},
+		"href": "https://api.spotify.com/v1/albums/6LBiuhK7PZKjVXyMfPxPoh",
+		"id": "6LBiuhK7PZKjVXyMfPxPoh",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/205b6692b6b710a322919c7ca9cece2997ac1869",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/2225ea2c7fdb286dfc69ffbc1a67a1b92a9ad3e4",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/27475aefd86ad8eaf6ff52b524ce049fbf44c2a8",
+			"width": 64
+		}],
+		"name": "My Beautiful Dark Twisted Fantasy (Explicit Version)",
+		"type": "album",
+		"uri": "spotify:album:6LBiuhK7PZKjVXyMfPxPoh"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/20r762YmB5HeofjMCiPMLv"
+		},
+		"href": "https://api.spotify.com/v1/albums/20r762YmB5HeofjMCiPMLv",
+		"id": "20r762YmB5HeofjMCiPMLv",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/ceb1924ed90e2a70026785444d0cba1a2d27041f",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/1cdc399c4e84daeede5791f0e7cee44c86f54ae1",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/52ac7f43a391c9119e5a179caad59350c6d8f19e",
+			"width": 64
+		}],
+		"name": "My Beautiful Dark Twisted Fantasy (Explicit Version)",
+		"type": "album",
+		"uri": "spotify:album:20r762YmB5HeofjMCiPMLv"
+	}, {
+		"album_type": "album",
+		"available_markets": ["ID", "MY", "TR"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/1SGxmLRKnJNI1ZMDoBWXoS"
+		},
+		"href": "https://api.spotify.com/v1/albums/1SGxmLRKnJNI1ZMDoBWXoS",
+		"id": "1SGxmLRKnJNI1ZMDoBWXoS",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/7a57f9ad3da52e1d7ea705fad38754fddfbd47de",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/b33c0ab3fd6e2e56eabd467fc056a242e5d5ba39",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/251728e17f9259285034f42bfce20449c1c52a19",
+			"width": 64
+		}],
+		"name": "My Beautiful Dark Twisted Fantasy (Edited Version)",
+		"type": "album",
+		"uri": "spotify:album:1SGxmLRKnJNI1ZMDoBWXoS"
+	}, {
+		"album_type": "album",
+		"available_markets": ["CA", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/6klUp8sQyRXGuJhqZu4PG3"
+		},
+		"href": "https://api.spotify.com/v1/albums/6klUp8sQyRXGuJhqZu4PG3",
+		"id": "6klUp8sQyRXGuJhqZu4PG3",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/8ec327bb0d8453aff35d1e10a8d6257a3aaab3d4",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/e918e55dad78dcbde84f143beea9d762dfdef9f4",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/82b65f640b58efb6b447b13a02fe061aa2e40368",
+			"width": 64
+		}],
+		"name": "My Beautiful Dark Twisted Fantasy (Edited Version)",
+		"type": "album",
+		"uri": "spotify:album:6klUp8sQyRXGuJhqZu4PG3"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/0EXLFY4NFNx4FlpAlFO7ly"
+		},
+		"href": "https://api.spotify.com/v1/albums/0EXLFY4NFNx4FlpAlFO7ly",
+		"id": "0EXLFY4NFNx4FlpAlFO7ly",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/f081a4994ad50df9f613ea7ab16f79fada145566",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/55bc1877585207c7843f2d667a92572335df24fc",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/5c015ce02387bebec0c911d71b31d5825c090257",
+			"width": 64
+		}],
+		"name": "Graduation (UK Version)",
+		"type": "album",
+		"uri": "spotify:album:0EXLFY4NFNx4FlpAlFO7ly"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/3I6L5qZBxU6fPBJ9Q6As7J"
+		},
+		"href": "https://api.spotify.com/v1/albums/3I6L5qZBxU6fPBJ9Q6As7J",
+		"id": "3I6L5qZBxU6fPBJ9Q6As7J",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/9f506a47a98bf255bd0ee8f241366cecdcb33b76",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/84ed9f40758abfc17f5a373edb279a8e5ffa631e",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/90629bfe02d610588941ee938df11383015a65de",
+			"width": 64
+		}],
+		"name": "Graduation",
+		"type": "album",
+		"uri": "spotify:album:3I6L5qZBxU6fPBJ9Q6As7J"
+	}, {
+		"album_type": "album",
+		"available_markets": ["ID", "MY", "TR"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/4WNXpeZR1jc2NFgOAeyLMB"
+		},
+		"href": "https://api.spotify.com/v1/albums/4WNXpeZR1jc2NFgOAeyLMB",
+		"id": "4WNXpeZR1jc2NFgOAeyLMB",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/0032d7d38c0b6ef05c3c182da4667c7d60f6caa0",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/356eb1329bd0ad1ae9949f0bcf44eb2a784a460a",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/1e898e43df0761d82d38fe87bea4dfa5284004cd",
+			"width": 64
+		}],
+		"name": "Graduation (Exclusive Edition)",
+		"type": "album",
+		"uri": "spotify:album:4WNXpeZR1jc2NFgOAeyLMB"
+	}],
+	"limit": 20,
+	"next": "https://api.spotify.com/v1/artists/5K4W6rqBFWDnAN6FQUkS6x/albums?offset=20&limit=20&album_type=single,album,compilation,appears_on,ep",
+	"offset": 0,
+	"previous": null,
+	"total": 705
+}

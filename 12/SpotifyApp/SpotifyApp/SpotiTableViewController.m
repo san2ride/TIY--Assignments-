@@ -35,7 +35,7 @@
                                                                              error:&error];
         if (error ==nil) {
                 
-        NSArray *array = [jsonDictionary objectForKey:@"artists"];
+        NSArray *array = [jsonDictionary objectForKey:@"items"];
         
         for(NSDictionary *dict in array) {
          
@@ -100,5 +100,8 @@
     }
     return str;
 }
+
+
+
 
 @end

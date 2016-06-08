@@ -14,8 +14,7 @@
 		A455F4BC1D074FD300B8B248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A455F4BA1D074FD300B8B248 /* LaunchScreen.storyboard */; };
 		A455F4C51D075A4200B8B248 /* SpotiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A455F4C41D075A4200B8B248 /* SpotiTableViewController.m */; };
 		A455F4C81D075B1100B8B248 /* Kanye.m in Sources */ = {isa = PBXBuildFile; fileRef = A455F4C71D075B1100B8B248 /* Kanye.m */; };
-		A455F4CD1D077C9800B8B248 /* west.json in Resources */ = {isa = PBXBuildFile; fileRef = A455F4CC1D077C9800B8B248 /* west.json */; };
-		A455F4CF1D07E7BD00B8B248 /* kan.json in Resources */ = {isa = PBXBuildFile; fileRef = A455F4CE1D07E7BD00B8B248 /* kan.json */; };
+		A455F4F91D08905900B8B248 /* west.json in Resources */ = {isa = PBXBuildFile; fileRef = A455F4F81D08905800B8B248 /* west.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +30,7 @@
 		A455F4C41D075A4200B8B248 /* SpotiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotiTableViewController.m; sourceTree = "<group>"; };
 		A455F4C61D075B1100B8B248 /* Kanye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kanye.h; sourceTree = "<group>"; };
 		A455F4C71D075B1100B8B248 /* Kanye.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kanye.m; sourceTree = "<group>"; };
-		A455F4CC1D077C9800B8B248 /* west.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = west.json; sourceTree = "<group>"; };
-		A455F4CE1D07E7BD00B8B248 /* kan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kan.json; sourceTree = "<group>"; };
+		A455F4F81D08905800B8B248 /* west.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = west.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +116,7 @@
 		A455F4D01D07E7C700B8B248 /* .json */ = {
 			isa = PBXGroup;
 			children = (
-				A455F4CE1D07E7BD00B8B248 /* kan.json */,
-				A455F4CC1D077C9800B8B248 /* west.json */,
+				A455F4F81D08905800B8B248 /* west.json */,
 			);
 			name = .json;
 			sourceTree = "<group>";
@@ -181,10 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A455F4CD1D077C9800B8B248 /* west.json in Resources */,
+				A455F4F91D08905900B8B248 /* west.json in Resources */,
 				A455F4BC1D074FD300B8B248 /* LaunchScreen.storyboard in Resources */,
 				A455F4B91D074FD300B8B248 /* Assets.xcassets in Resources */,
-				A455F4CF1D07E7BD00B8B248 /* kan.json in Resources */,
 				A455F4B71D074FD300B8B248 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +345,7 @@
 				A455F4C21D074FD300B8B248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
