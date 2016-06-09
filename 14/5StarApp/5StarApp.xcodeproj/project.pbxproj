@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A447D7761D0A09B8000FCA16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7751D0A09B8000FCA16 /* main.m */; };
+		A447D7791D0A09B8000FCA16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7781D0A09B8000FCA16 /* AppDelegate.m */; };
+		A447D77F1D0A09B9000FCA16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A447D77D1D0A09B9000FCA16 /* Main.storyboard */; };
+		A447D7811D0A09B9000FCA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A447D7801D0A09B9000FCA16 /* Assets.xcassets */; };
+		A447D7841D0A09B9000FCA16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A447D7821D0A09B9000FCA16 /* LaunchScreen.storyboard */; };
+		A447D78D1D0A1020000FCA16 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D78C1D0A1020000FCA16 /* loginViewController.m */; };
+		A447D7901D0A1429000FCA16 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D78F1D0A1429000FCA16 /* HomeViewController.m */; };
+		A447D79A1D0A1610000FCA16 /* restaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7991D0A1610000FCA16 /* restaurantViewController.m */; };
+		A447D79D1D0A16DF000FCA16 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D79C1D0A16DF000FCA16 /* MenuTableViewController.m */; };
+		A447D7A31D0A17C6000FCA16 /* DishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7A21D0A17C6000FCA16 /* DishViewController.m */; };
+		A447D7A61D0A1A6B000FCA16 /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7A51D0A1A6B000FCA16 /* RestaurantTableViewCell.m */; };
+		A447D7A91D0A2373000FCA16 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7A81D0A2373000FCA16 /* AboutViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A447D7711D0A09B7000FCA16 /* 5StarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5StarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A447D7751D0A09B8000FCA16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A447D7771D0A09B8000FCA16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A447D7781D0A09B8000FCA16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A447D77E1D0A09B9000FCA16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A447D7801D0A09B9000FCA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A447D7831D0A09B9000FCA16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A447D7851D0A09B9000FCA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A447D78B1D0A1020000FCA16 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loginViewController.h; path = 5StarApp/loginViewController.h; sourceTree = "<group>"; };
+		A447D78C1D0A1020000FCA16 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loginViewController.m; path = 5StarApp/loginViewController.m; sourceTree = "<group>"; };
+		A447D78E1D0A1429000FCA16 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A447D78F1D0A1429000FCA16 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A447D7981D0A1610000FCA16 /* restaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = restaurantViewController.h; path = 5StarApp/restaurantViewController.h; sourceTree = "<group>"; };
+		A447D7991D0A1610000FCA16 /* restaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = restaurantViewController.m; path = 5StarApp/restaurantViewController.m; sourceTree = "<group>"; };
+		A447D79B1D0A16DF000FCA16 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTableViewController.h; path = 5StarApp/MenuTableViewController.h; sourceTree = "<group>"; };
+		A447D79C1D0A16DF000FCA16 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = 5StarApp/MenuTableViewController.m; sourceTree = "<group>"; };
+		A447D7A11D0A17C6000FCA16 /* DishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishViewController.h; sourceTree = "<group>"; };
+		A447D7A21D0A17C6000FCA16 /* DishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishViewController.m; sourceTree = "<group>"; };
+		A447D7A41D0A1A6B000FCA16 /* RestaurantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantTableViewCell.h; sourceTree = "<group>"; };
+		A447D7A51D0A1A6B000FCA16 /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableViewCell.m; sourceTree = "<group>"; };
+		A447D7A71D0A2373000FCA16 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = 5StarApp/AboutViewController.h; sourceTree = "<group>"; };
+		A447D7A81D0A2373000FCA16 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = 5StarApp/AboutViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A447D76E1D0A09B7000FCA16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A447D7681D0A09B7000FCA16 = {
+			isa = PBXGroup;
+			children = (
+				A447D7731D0A09B8000FCA16 /* 5StarApp */,
+				A447D7721D0A09B7000FCA16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A447D7721D0A09B7000FCA16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A447D7711D0A09B7000FCA16 /* 5StarApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A447D7731D0A09B8000FCA16 /* 5StarApp */ = {
+			isa = PBXGroup;
+			children = (
+				A447D7931D0A1468000FCA16 /* Modals */,
+				A447D7941D0A147F000FCA16 /* Views */,
+				A447D7911D0A1438000FCA16 /* Controller */,
+				A447D77D1D0A09B9000FCA16 /* Main.storyboard */,
+				A447D7801D0A09B9000FCA16 /* Assets.xcassets */,
+				A447D7821D0A09B9000FCA16 /* LaunchScreen.storyboard */,
+				A447D7851D0A09B9000FCA16 /* Info.plist */,
+				A447D7921D0A1451000FCA16 /* AppDelegate */,
+				A447D7741D0A09B8000FCA16 /* Supporting Files */,
+			);
+			path = 5StarApp;
+			sourceTree = "<group>";
+		};
+		A447D7741D0A09B8000FCA16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A447D7751D0A09B8000FCA16 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A447D7911D0A1438000FCA16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A447D7A71D0A2373000FCA16 /* AboutViewController.h */,
+				A447D7A81D0A2373000FCA16 /* AboutViewController.m */,
+				A447D7A11D0A17C6000FCA16 /* DishViewController.h */,
+				A447D7A21D0A17C6000FCA16 /* DishViewController.m */,
+				A447D79B1D0A16DF000FCA16 /* MenuTableViewController.h */,
+				A447D79C1D0A16DF000FCA16 /* MenuTableViewController.m */,
+				A447D7981D0A1610000FCA16 /* restaurantViewController.h */,
+				A447D7991D0A1610000FCA16 /* restaurantViewController.m */,
+				A447D78B1D0A1020000FCA16 /* loginViewController.h */,
+				A447D78C1D0A1020000FCA16 /* loginViewController.m */,
+				A447D78E1D0A1429000FCA16 /* HomeViewController.h */,
+				A447D78F1D0A1429000FCA16 /* HomeViewController.m */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A447D7921D0A1451000FCA16 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A447D7771D0A09B8000FCA16 /* AppDelegate.h */,
+				A447D7781D0A09B8000FCA16 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A447D7931D0A1468000FCA16 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		A447D7941D0A147F000FCA16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A447D7A41D0A1A6B000FCA16 /* RestaurantTableViewCell.h */,
+				A447D7A51D0A1A6B000FCA16 /* RestaurantTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A447D7701D0A09B7000FCA16 /* 5StarApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A447D7881D0A09B9000FCA16 /* Build configuration list for PBXNativeTarget "5StarApp" */;
+			buildPhases = (
+				A447D76D1D0A09B7000FCA16 /* Sources */,
+				A447D76E1D0A09B7000FCA16 /* Frameworks */,
+				A447D76F1D0A09B7000FCA16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 5StarApp;
+			productName = 5StarApp;
+			productReference = A447D7711D0A09B7000FCA16 /* 5StarApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A447D7691D0A09B7000FCA16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "trvl, LLC";
+				TargetAttributes = {
+					A447D7701D0A09B7000FCA16 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = A447D76C1D0A09B7000FCA16 /* Build configuration list for PBXProject "5StarApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A447D7681D0A09B7000FCA16;
+			productRefGroup = A447D7721D0A09B7000FCA16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A447D7701D0A09B7000FCA16 /* 5StarApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A447D76F1D0A09B7000FCA16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A447D7841D0A09B9000FCA16 /* LaunchScreen.storyboard in Resources */,
+				A447D7811D0A09B9000FCA16 /* Assets.xcassets in Resources */,
+				A447D77F1D0A09B9000FCA16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A447D76D1D0A09B7000FCA16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A447D78D1D0A1020000FCA16 /* loginViewController.m in Sources */,
+				A447D7791D0A09B8000FCA16 /* AppDelegate.m in Sources */,
+				A447D7761D0A09B8000FCA16 /* main.m in Sources */,
+				A447D7901D0A1429000FCA16 /* HomeViewController.m in Sources */,
+				A447D79D1D0A16DF000FCA16 /* MenuTableViewController.m in Sources */,
+				A447D7A91D0A2373000FCA16 /* AboutViewController.m in Sources */,
+				A447D7A31D0A17C6000FCA16 /* DishViewController.m in Sources */,
+				A447D79A1D0A1610000FCA16 /* restaurantViewController.m in Sources */,
+				A447D7A61D0A1A6B000FCA16 /* RestaurantTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A447D77D1D0A09B9000FCA16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A447D77E1D0A09B9000FCA16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A447D7821D0A09B9000FCA16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A447D7831D0A09B9000FCA16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A447D7861D0A09B9000FCA16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A447D7871D0A09B9000FCA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A447D7891D0A09B9000FCA16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 5StarApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.-StarApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A447D78A1D0A09B9000FCA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 5StarApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.-StarApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A447D76C1D0A09B7000FCA16 /* Build configuration list for PBXProject "5StarApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A447D7861D0A09B9000FCA16 /* Debug */,
+				A447D7871D0A09B9000FCA16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A447D7881D0A09B9000FCA16 /* Build configuration list for PBXNativeTarget "5StarApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A447D7891D0A09B9000FCA16 /* Debug */,
+				A447D78A1D0A09B9000FCA16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A447D7691D0A09B7000FCA16 /* Project object */;
+}
