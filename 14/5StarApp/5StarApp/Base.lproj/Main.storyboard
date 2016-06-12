@@ -14,19 +14,87 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-km-4rd">
+                                <rect key="frame" x="15" y="84" width="387" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gmichelin" translatesAutoresizingMaskIntoConstraints="NO" id="44G-uK-K4B">
+                                <rect key="frame" x="410" y="84" width="175" height="496"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="175" id="Fdj-WA-qKS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="dCD-gh-rzL"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-yV-nms">
+                                <rect key="frame" x="15" y="129" width="387" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="748" image="GMFrance" translatesAutoresizingMaskIntoConstraints="NO" id="4P7-e2-0zq">
+                                <rect key="frame" x="15" y="172" width="387" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="uNx-7T-HFW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="747" image="gMichelin-1" translatesAutoresizingMaskIntoConstraints="NO" id="eWq-X6-XNd">
+                                <rect key="frame" x="15" y="357" width="387" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="cP8-Ez-7ei"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obW-QV-dSF">
+                                <rect key="frame" x="15" y="528" width="387" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <state key="normal" title="    enter" backgroundImage="GM25frances">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqN-vF-UvW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.060961689113458659" blue="0.036115354374466301" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eWq-X6-XNd" firstAttribute="leading" secondItem="obW-QV-dSF" secondAttribute="leading" id="0Se-kc-Mor"/>
+                            <constraint firstItem="4P7-e2-0zq" firstAttribute="top" secondItem="VHC-yV-nms" secondAttribute="bottom" constant="13" id="1Qn-db-joy"/>
+                            <constraint firstItem="44G-uK-K4B" firstAttribute="leading" secondItem="sWE-km-4rd" secondAttribute="trailing" constant="8" id="22k-QA-ZLG"/>
+                            <constraint firstItem="obW-QV-dSF" firstAttribute="leading" secondItem="4P7-e2-0zq" secondAttribute="leading" id="52v-W7-41X"/>
+                            <constraint firstItem="44G-uK-K4B" firstAttribute="leading" secondItem="4P7-e2-0zq" secondAttribute="trailing" constant="8" symbolic="YES" id="7Qh-Kc-dUM"/>
+                            <constraint firstItem="4P7-e2-0zq" firstAttribute="leading" secondItem="VHC-yV-nms" secondAttribute="leading" id="9MK-3L-pbc"/>
+                            <constraint firstItem="VHC-yV-nms" firstAttribute="top" secondItem="sWE-km-4rd" secondAttribute="bottom" constant="15" id="EKe-2H-c8r"/>
+                            <constraint firstItem="sWE-km-4rd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Kqy-aW-kvb"/>
+                            <constraint firstItem="44G-uK-K4B" firstAttribute="leading" secondItem="eWq-X6-XNd" secondAttribute="trailing" constant="8" symbolic="YES" id="NUe-kM-7Aj"/>
+                            <constraint firstAttribute="trailing" secondItem="44G-uK-K4B" secondAttribute="trailing" constant="15" id="RRf-Fw-sGb"/>
+                            <constraint firstItem="44G-uK-K4B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Syj-YV-tVP"/>
+                            <constraint firstItem="obW-QV-dSF" firstAttribute="top" secondItem="eWq-X6-XNd" secondAttribute="bottom" constant="14" id="Vce-UA-REY"/>
+                            <constraint firstItem="44G-uK-K4B" firstAttribute="leading" secondItem="VHC-yV-nms" secondAttribute="trailing" constant="8" id="apV-1g-O2B"/>
+                            <constraint firstItem="obW-QV-dSF" firstAttribute="bottom" secondItem="44G-uK-K4B" secondAttribute="bottom" id="fSK-Kk-T1l"/>
+                            <constraint firstItem="eWq-X6-XNd" firstAttribute="top" secondItem="4P7-e2-0zq" secondAttribute="bottom" constant="7" id="fng-VQ-8GL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="44G-uK-K4B" secondAttribute="bottom" constant="20" id="riN-O5-3IY"/>
+                            <constraint firstItem="sWE-km-4rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="sWH-bI-I89"/>
+                            <constraint firstItem="VHC-yV-nms" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="xAM-TN-XiL"/>
+                            <constraint firstItem="44G-uK-K4B" firstAttribute="leading" secondItem="obW-QV-dSF" secondAttribute="trailing" constant="8" symbolic="YES" id="xEj-il-fdX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1fo-Bc-VGe"/>
                     <connections>
+                        <outlet property="franceImageView" destination="4P7-e2-0zq" id="tyS-Zs-Foj"/>
+                        <outlet property="loginImageView" destination="44G-uK-K4B" id="6dn-IM-7ht"/>
+                        <outlet property="michelinImageView" destination="eWq-X6-XNd" id="V7u-B6-2WD"/>
+                        <outlet property="passwordTextField" destination="VHC-yV-nms" id="lkP-ZS-74U"/>
+                        <outlet property="usernameTextField" destination="sWE-km-4rd" id="gd0-r1-Svh"/>
                         <segue destination="xnJ-1J-RlS" kind="show" identifier="homeSegue" id="bsj-Sg-jS4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="-358"/>
+            <point key="canvasLocation" x="374" y="-325"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Ucl-nb-Os0">
@@ -84,7 +152,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="ZVF-6G-fpr" customClass="RestaurantTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="150" id="ZVF-6G-fpr" customClass="RestaurantTableViewCell">
                                         <rect key="frame" x="0.0" y="92" width="600" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZVF-6G-fpr" id="8IZ-Ye-Sa6">
@@ -162,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="scQ-4e-WSL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell2" selectionStyle="default" indentationWidth="10" id="scQ-4e-WSL">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scQ-4e-WSL" id="F1C-2f-jJY">
@@ -221,4 +289,10 @@
             <point key="canvasLocation" x="-370" y="-358"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GM25frances" width="1085" height="182"/>
+        <image name="GMFrance" width="1018" height="755"/>
+        <image name="gMichelin-1" width="964" height="720"/>
+        <image name="gmichelin" width="191" height="291"/>
+    </resources>
 </document>

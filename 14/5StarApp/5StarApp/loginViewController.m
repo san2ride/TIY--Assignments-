@@ -7,8 +7,15 @@
 //
 
 #import "loginViewController.h"
+#import "HomeViewController.h"
 
 @interface loginViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *loginImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *franceImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *michelinImageView;
 
 @end
 
@@ -16,22 +23,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+  
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)enterButton:(UIButton *)sender {
+    
+    if ([self.usernameTextField.text isEqualToString:@"sushi"]) {
+        
+    if ([self.passwordTextField.text isEqualToString:@"is2good"]){
+        
+    [self performSegueWithIdentifier:@"homeSegue" sender:self];
+        
+    
+}
+    else {
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+        
+    }
+    else {
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+
+   
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
+    
 @end

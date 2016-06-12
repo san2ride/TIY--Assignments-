@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A43F5AFB1D0B5FEF006083B0 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = A43F5AFA1D0B5FEF006083B0 /* menu.json */; };
+		A43F5B061D0D0F32006083B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43F5B051D0D0F32006083B0 /* Assets.xcassets */; };
 		A447D7761D0A09B8000FCA16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7751D0A09B8000FCA16 /* main.m */; };
 		A447D7791D0A09B8000FCA16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7781D0A09B8000FCA16 /* AppDelegate.m */; };
 		A447D77F1D0A09B9000FCA16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A447D77D1D0A09B9000FCA16 /* Main.storyboard */; };
-		A447D7811D0A09B9000FCA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A447D7801D0A09B9000FCA16 /* Assets.xcassets */; };
 		A447D7841D0A09B9000FCA16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A447D7821D0A09B9000FCA16 /* LaunchScreen.storyboard */; };
 		A447D78D1D0A1020000FCA16 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D78C1D0A1020000FCA16 /* loginViewController.m */; };
 		A447D7901D0A1429000FCA16 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D78F1D0A1429000FCA16 /* HomeViewController.m */; };
@@ -24,12 +24,12 @@
 
 /* Begin PBXFileReference section */
 		A43F5AFA1D0B5FEF006083B0 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		A43F5B051D0D0F32006083B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A447D7711D0A09B7000FCA16 /* 5StarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5StarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A447D7751D0A09B8000FCA16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A447D7771D0A09B8000FCA16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A447D7781D0A09B8000FCA16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A447D77E1D0A09B9000FCA16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A447D7801D0A09B9000FCA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A447D7831D0A09B9000FCA16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A447D7851D0A09B9000FCA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A447D78B1D0A1020000FCA16 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loginViewController.h; path = 5StarApp/loginViewController.h; sourceTree = "<group>"; };
@@ -82,10 +82,10 @@
 				A447D7941D0A147F000FCA16 /* Views */,
 				A447D7911D0A1438000FCA16 /* Controller */,
 				A447D77D1D0A09B9000FCA16 /* Main.storyboard */,
-				A447D7801D0A09B9000FCA16 /* Assets.xcassets */,
 				A43F5AFA1D0B5FEF006083B0 /* menu.json */,
 				A447D7821D0A09B9000FCA16 /* LaunchScreen.storyboard */,
 				A447D7851D0A09B9000FCA16 /* Info.plist */,
+				A43F5B051D0D0F32006083B0 /* Assets.xcassets */,
 				A447D7921D0A1451000FCA16 /* AppDelegate */,
 				A447D7741D0A09B8000FCA16 /* Supporting Files */,
 			);
@@ -202,8 +202,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43F5B061D0D0F32006083B0 /* Assets.xcassets in Resources */,
 				A447D7841D0A09B9000FCA16 /* LaunchScreen.storyboard in Resources */,
-				A447D7811D0A09B9000FCA16 /* Assets.xcassets in Resources */,
 				A43F5AFB1D0B5FEF006083B0 /* menu.json in Resources */,
 				A447D77F1D0A09B9000FCA16 /* Main.storyboard in Resources */,
 			);
