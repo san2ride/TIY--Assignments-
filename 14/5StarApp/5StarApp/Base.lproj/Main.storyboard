@@ -107,11 +107,48 @@
                     <view key="view" contentMode="scaleToFill" id="Wfc-eO-3o2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT1-eU-pWP">
+                                <rect key="frame" x="75" y="400" width="450" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.17427443151322863" blue="0.09153623089612728" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="x0T-12-8l6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="28"/>
+                                <state key="normal" title="ABOUT" backgroundImage="Strip">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutButton:" destination="xnJ-1J-RlS" eventType="touchUpInside" id="fHy-UV-iLj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRX-uG-wxT">
+                                <rect key="frame" x="75" y="214" width="450" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5iv-Cu-epg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="28"/>
+                                <state key="normal" title="RESTAURANTS" backgroundImage="Strip">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restButton:" destination="xnJ-1J-RlS" eventType="touchUpInside" id="aGI-8k-GcS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.13251620196759117" blue="0.099082323098718672" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CT1-eU-pWP" firstAttribute="trailing" secondItem="BRX-uG-wxT" secondAttribute="trailing" id="0c0-Dm-Ft4"/>
+                            <constraint firstItem="fXG-zN-Vx0" firstAttribute="top" secondItem="CT1-eU-pWP" secondAttribute="bottom" constant="150" id="DUv-o0-KDB"/>
+                            <constraint firstItem="CT1-eU-pWP" firstAttribute="centerX" secondItem="Wfc-eO-3o2" secondAttribute="centerX" id="aIF-v9-5Td"/>
+                            <constraint firstItem="CT1-eU-pWP" firstAttribute="leading" secondItem="Wfc-eO-3o2" secondAttribute="leadingMargin" constant="55" id="dzJ-VM-fMr"/>
+                            <constraint firstItem="BRX-uG-wxT" firstAttribute="top" secondItem="q2f-ru-yOL" secondAttribute="bottom" constant="150" id="nna-FR-RzL"/>
+                            <constraint firstItem="CT1-eU-pWP" firstAttribute="leading" secondItem="BRX-uG-wxT" secondAttribute="leading" id="qe6-Y4-fA0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="RGH-RS-6FK" kind="show" identifier="RestaurantSegue" id="igU-sd-uj6"/>
-                        <segue destination="a9h-u6-jOh" kind="presentation" identifier="AboutSegue" id="Lqi-HW-jIe"/>
+                        <segue destination="a9h-u6-jOh" kind="show" identifier="AboutSegue" id="Lqi-HW-jIe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eey-qD-U5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,7 +166,22 @@
                     <view key="view" contentMode="scaleToFill" id="CGc-kp-oQi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zot-Xj-ZVT">
+                                <rect key="frame" x="10" y="84" width="580" height="496"/>
+                                <color key="backgroundColor" red="1" green="0.080086939856267247" blue="0.064580256643345657" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Michelin Guides (French: Guide Michelin) are a series of annual guide books published by the French company Michelin for more than a century. The term normally refers to the Michelin Red Guide, the oldest European hotel and restaurant reference guide, which awards Michelin stars for excellence to a select few establishments. The acquisition or loss of a star can have dramatic effects on the success of a restaurant.</string>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.095713278142469438" blue="0.072561496375289414" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hJw-Ft-9HJ" firstAttribute="top" secondItem="Zot-Xj-ZVT" secondAttribute="bottom" constant="20" id="2Dc-tL-9XE"/>
+                            <constraint firstAttribute="trailing" secondItem="Zot-Xj-ZVT" secondAttribute="trailing" constant="10" id="ILd-zH-XS5"/>
+                            <constraint firstItem="Zot-Xj-ZVT" firstAttribute="top" secondItem="HoT-k0-QSO" secondAttribute="bottom" constant="20" id="lcy-vC-mjT"/>
+                            <constraint firstItem="Zot-Xj-ZVT" firstAttribute="leading" secondItem="CGc-kp-oQi" secondAttribute="leading" constant="10" id="xXz-Px-a9j"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCm-5f-6j3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -148,7 +200,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bu5-xl-6RP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bu5-xl-6RP">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -212,6 +264,10 @@
                             <constraint firstAttribute="trailing" secondItem="Bu5-xl-6RP" secondAttribute="trailing" id="qm2-lF-xnG"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="BwC-NH-beM"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Bu5-xl-6RP" id="nih-Ef-uUi"/>
                         <segue destination="upV-gW-edS" kind="show" identifier="MenuSegue" id="GiU-gz-HGa"/>
@@ -263,8 +319,58 @@
                     <view key="view" contentMode="scaleToFill" id="fKr-Hm-ziN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dish Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5c-nL-mg5">
+                                <rect key="frame" x="165" y="74" width="270" height="31"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="GMFrance" translatesAutoresizingMaskIntoConstraints="NO" id="mvC-b9-V3Y">
+                                <rect key="frame" x="165" y="134" width="270" height="258"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-tU-HRf">
+                                <rect key="frame" x="3" y="475" width="594" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Dish Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axQ-RG-l3F">
+                                <rect key="frame" x="165" y="415" width="270" height="31"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lQ-US-IkR">
+                                <rect key="frame" x="247" y="544" width="106" height="31"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mvC-b9-V3Y" firstAttribute="top" secondItem="x5c-nL-mg5" secondAttribute="bottom" constant="29" id="3B5-p8-L0L"/>
+                            <constraint firstAttribute="trailing" secondItem="4lQ-US-IkR" secondAttribute="trailing" constant="247" id="3MX-gt-l3g"/>
+                            <constraint firstAttribute="trailing" secondItem="x5c-nL-mg5" secondAttribute="trailing" constant="165" id="AMk-vw-muv"/>
+                            <constraint firstItem="axQ-RG-l3F" firstAttribute="top" secondItem="mvC-b9-V3Y" secondAttribute="bottom" constant="23" id="ASh-qy-WMJ"/>
+                            <constraint firstItem="x5c-nL-mg5" firstAttribute="leading" secondItem="fKr-Hm-ziN" secondAttribute="leading" constant="165" id="VEf-eV-2ZT"/>
+                            <constraint firstItem="4lQ-US-IkR" firstAttribute="leading" secondItem="fKr-Hm-ziN" secondAttribute="leading" constant="247" id="VSR-VI-VsE"/>
+                            <constraint firstAttribute="trailing" secondItem="4fj-tU-HRf" secondAttribute="trailing" constant="5" id="dnq-AM-TZa"/>
+                            <constraint firstItem="4lQ-US-IkR" firstAttribute="top" secondItem="4fj-tU-HRf" secondAttribute="bottom" constant="39" id="g0h-UW-EA4"/>
+                            <constraint firstAttribute="trailing" secondItem="axQ-RG-l3F" secondAttribute="trailing" constant="165" id="gz5-zr-N1i"/>
+                            <constraint firstItem="x5c-nL-mg5" firstAttribute="top" secondItem="IuV-WX-7i1" secondAttribute="bottom" constant="10" id="i6c-58-1jg"/>
+                            <constraint firstAttribute="trailing" secondItem="mvC-b9-V3Y" secondAttribute="trailing" constant="165" id="j7w-oT-viL"/>
+                            <constraint firstItem="IPS-pz-Z8N" firstAttribute="top" secondItem="4lQ-US-IkR" secondAttribute="bottom" constant="25" id="jAY-Fk-FQK"/>
+                            <constraint firstItem="4fj-tU-HRf" firstAttribute="top" secondItem="axQ-RG-l3F" secondAttribute="bottom" constant="29" id="jMp-kF-cn9"/>
+                            <constraint firstItem="axQ-RG-l3F" firstAttribute="leading" secondItem="fKr-Hm-ziN" secondAttribute="leading" constant="165" id="nzF-X9-WVb"/>
+                            <constraint firstItem="mvC-b9-V3Y" firstAttribute="leading" secondItem="fKr-Hm-ziN" secondAttribute="leading" constant="165" id="p6a-bh-LZi"/>
+                            <constraint firstItem="4fj-tU-HRf" firstAttribute="leading" secondItem="fKr-Hm-ziN" secondAttribute="leading" constant="5" id="ueG-6X-AH1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dishImage" destination="mvC-b9-V3Y" id="PzJ-ee-Ulo"/>
+                        <outlet property="dishSlider" destination="4fj-tU-HRf" id="OCn-Ib-QGM"/>
+                        <outlet property="nameLabel" destination="axQ-RG-l3F" id="Hhd-sB-IAJ"/>
+                        <outlet property="titleLabel" destination="x5c-nL-mg5" id="8lh-qG-wU8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gK1-iI-HN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,6 +398,7 @@
     <resources>
         <image name="GM25frances" width="1085" height="182"/>
         <image name="GMFrance" width="1018" height="755"/>
+        <image name="Strip" width="921" height="149"/>
         <image name="gMichelin-1" width="964" height="720"/>
         <image name="gmichelin" width="191" height="291"/>
     </resources>

@@ -20,6 +20,8 @@
 		A447D7A31D0A17C6000FCA16 /* DishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7A21D0A17C6000FCA16 /* DishViewController.m */; };
 		A447D7A61D0A1A6B000FCA16 /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7A51D0A1A6B000FCA16 /* RestaurantTableViewCell.m */; };
 		A447D7A91D0A2373000FCA16 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A447D7A81D0A2373000FCA16 /* AboutViewController.m */; };
+		A4FD00341D0EFC0800AF5B17 /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FD00311D0EFC0800AF5B17 /* Dish.m */; };
+		A4FD00351D0EFC0800AF5B17 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FD00331D0EFC0800AF5B17 /* Restaurant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		A447D7A51D0A1A6B000FCA16 /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableViewCell.m; sourceTree = "<group>"; };
 		A447D7A71D0A2373000FCA16 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = 5StarApp/AboutViewController.h; sourceTree = "<group>"; };
 		A447D7A81D0A2373000FCA16 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = 5StarApp/AboutViewController.m; sourceTree = "<group>"; };
+		A4FD00301D0EFC0800AF5B17 /* Dish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dish.h; sourceTree = "<group>"; };
+		A4FD00311D0EFC0800AF5B17 /* Dish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dish.m; sourceTree = "<group>"; };
+		A4FD00321D0EFC0800AF5B17 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		A4FD00331D0EFC0800AF5B17 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,18 +109,18 @@
 		A447D7911D0A1438000FCA16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A447D7A71D0A2373000FCA16 /* AboutViewController.h */,
-				A447D7A81D0A2373000FCA16 /* AboutViewController.m */,
-				A447D7A11D0A17C6000FCA16 /* DishViewController.h */,
-				A447D7A21D0A17C6000FCA16 /* DishViewController.m */,
-				A447D79B1D0A16DF000FCA16 /* MenuTableViewController.h */,
-				A447D79C1D0A16DF000FCA16 /* MenuTableViewController.m */,
-				A447D7981D0A1610000FCA16 /* restaurantViewController.h */,
-				A447D7991D0A1610000FCA16 /* restaurantViewController.m */,
 				A447D78B1D0A1020000FCA16 /* loginViewController.h */,
 				A447D78C1D0A1020000FCA16 /* loginViewController.m */,
 				A447D78E1D0A1429000FCA16 /* HomeViewController.h */,
 				A447D78F1D0A1429000FCA16 /* HomeViewController.m */,
+				A447D7981D0A1610000FCA16 /* restaurantViewController.h */,
+				A447D7991D0A1610000FCA16 /* restaurantViewController.m */,
+				A447D79B1D0A16DF000FCA16 /* MenuTableViewController.h */,
+				A447D79C1D0A16DF000FCA16 /* MenuTableViewController.m */,
+				A447D7A11D0A17C6000FCA16 /* DishViewController.h */,
+				A447D7A21D0A17C6000FCA16 /* DishViewController.m */,
+				A447D7A71D0A2373000FCA16 /* AboutViewController.h */,
+				A447D7A81D0A2373000FCA16 /* AboutViewController.m */,
 			);
 			name = Controller;
 			path = ..;
@@ -132,6 +138,10 @@
 		A447D7931D0A1468000FCA16 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				A4FD00301D0EFC0800AF5B17 /* Dish.h */,
+				A4FD00311D0EFC0800AF5B17 /* Dish.m */,
+				A4FD00321D0EFC0800AF5B17 /* Restaurant.h */,
+				A4FD00331D0EFC0800AF5B17 /* Restaurant.m */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -221,8 +231,10 @@
 				A447D7761D0A09B8000FCA16 /* main.m in Sources */,
 				A447D7901D0A1429000FCA16 /* HomeViewController.m in Sources */,
 				A447D79D1D0A16DF000FCA16 /* MenuTableViewController.m in Sources */,
+				A4FD00341D0EFC0800AF5B17 /* Dish.m in Sources */,
 				A447D7A91D0A2373000FCA16 /* AboutViewController.m in Sources */,
 				A447D7A31D0A17C6000FCA16 /* DishViewController.m in Sources */,
+				A4FD00351D0EFC0800AF5B17 /* Restaurant.m in Sources */,
 				A447D79A1D0A1610000FCA16 /* restaurantViewController.m in Sources */,
 				A447D7A61D0A1A6B000FCA16 /* RestaurantTableViewCell.m in Sources */,
 			);

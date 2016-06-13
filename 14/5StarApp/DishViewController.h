@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DishViewController : UIViewController
+@property (nonatomic, assign) float currentValue;
 
 @end
