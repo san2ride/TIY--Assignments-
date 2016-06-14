@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Agent View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AgentViewController" customModule="My1stSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4En-x4-7z6">
+                                <rect key="frame" x="20" y="70" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wtz-jm-znv"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0H-M8-XH8">
+                                <rect key="frame" x="225" y="527" width="150" height="40"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4G-re-FUL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="749" image="IGadjet" translatesAutoresizingMaskIntoConstraints="NO" id="Mnt-lI-FmA">
+                                <rect key="frame" x="20" y="125" width="560" height="351"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="351" id="ffC-Yd-5Fy"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-0w-oND">
+                                <rect key="frame" x="280" y="70" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CnS-Hn-tBB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Greetings Agent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnV-8q-PtY">
+                                <rect key="frame" x="25" y="10" width="550" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mnt-lI-FmA" secondAttribute="trailing" constant="20" id="0jq-Me-jbn"/>
+                            <constraint firstItem="4En-x4-7z6" firstAttribute="top" secondItem="wnV-8q-PtY" secondAttribute="bottom" constant="39" id="1L1-yg-Fun"/>
+                            <constraint firstItem="0Th-0w-oND" firstAttribute="width" secondItem="4En-x4-7z6" secondAttribute="width" id="AtM-kC-gny"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Th-0w-oND" secondAttribute="trailing" id="FKb-2A-xxu"/>
+                            <constraint firstItem="wnV-8q-PtY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="GsN-UJ-9J9"/>
+                            <constraint firstItem="0Th-0w-oND" firstAttribute="top" secondItem="wnV-8q-PtY" secondAttribute="bottom" constant="39" id="IdP-8J-Kgr"/>
+                            <constraint firstItem="a0H-M8-XH8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K6k-4K-w71"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4En-x4-7z6" secondAttribute="leading" id="KJw-NW-Cgg"/>
+                            <constraint firstItem="0Th-0w-oND" firstAttribute="leading" secondItem="4En-x4-7z6" secondAttribute="trailing" constant="8" id="Y0A-Mh-HTL"/>
+                            <constraint firstItem="wnV-8q-PtY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="ZRO-t6-Kcr"/>
+                            <constraint firstAttribute="trailing" secondItem="wnV-8q-PtY" secondAttribute="trailing" constant="25" id="gsI-bK-R0G"/>
+                            <constraint firstItem="Mnt-lI-FmA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="huV-Vd-mON"/>
+                            <constraint firstItem="a0H-M8-XH8" firstAttribute="top" secondItem="Mnt-lI-FmA" secondAttribute="bottom" constant="51" id="iOV-i0-CVo"/>
+                            <constraint firstItem="Mnt-lI-FmA" firstAttribute="top" secondItem="4En-x4-7z6" secondAttribute="bottom" constant="25" id="pfZ-tt-tI4"/>
+                            <constraint firstItem="4En-x4-7z6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="xlX-hI-auN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Y0A-Mh-HTL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="wnV-8q-PtY" id="WOh-cI-Aks"/>
+                        <outlet property="imageView" destination="Mnt-lI-FmA" id="yEU-Iu-Ko9"/>
+                        <outlet property="passTextField" destination="0Th-0w-oND" id="jFG-bF-CgQ"/>
+                        <outlet property="userTextField" destination="4En-x4-7z6" id="kea-3j-vzy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IGadjet" width="608" height="538"/>
+    </resources>
+</document>
