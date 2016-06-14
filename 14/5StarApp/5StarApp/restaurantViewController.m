@@ -9,8 +9,9 @@
 #import "restaurantViewController.h"
 #import "Dish.h"
 #import "Restaurant.h"
+#import "RestaurantTableViewCell.h"
 
-@interface restaurantViewController ()
+@interface restaurantViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *restrauntsArray;
 @property (strong, nonatomic) NSMutableArray *dishesArray;
@@ -24,17 +25,79 @@
     
     self.restrauntsArray = [[NSMutableArray alloc] init];
     
-    
     NSDictionary *theDictionary = [self parseJSONFile];
     
     NSLog(@"theDict ==%@", theDictionary);
+
+    NSArray *array = [theDictionary objectForKey:@"restaurants"];
     
-    NSArray *jsonArray = [theDictionary objectForKey:@"restaurants"];
-    
-    
-    for(NSDictionary *dict in jsonArray) {
+    for(NSDictionary *dict in array) {
         
         Restaurant *theRestaurant = [[Restaurant alloc] init];
+        
+        NSArray *dishesJSONArray = [dict objectForKey:@"dishes"];
+        
+        
+        for(NSDictionary *dishDict in dishesJSONArray) {
+            Dish *theDish = [[Dish alloc] init];
+            
+            NSString *name = [dishDict objectForKey:@"name"];
+            
+            if(name != nil) {
+                theDish.name = name;
+            } else {
+                theDish.name =@"";
+                NSLog(@"I could not parse name");
+            }
+            
+            NSString *dishdescription = [dict objectForKey:@"dishdescription"];
+            
+            if(dishdescription != nil) {
+                theDish.dishdescription = dishdescription;
+            } else {
+                theDish.dishdescription =@"";
+                NSLog(@"I could not parse dishdescription");
+            }
+            
+            NSString *rating = [dict objectForKey:@"rating"];
+            
+            if(rating != nil) {
+                theDish.rating = rating;
+            } else {
+                theDish.rating =@"";
+                NSLog(@"I could not parse rating");
+            }
+            
+            NSString *imageNameString = [dict objectForKey:@"image"];
+            
+            if(imageNameString != nil) {
+                theDish.imageNameString = imageNameString;
+            } else {
+                
+                NSLog(@"I could not parse image");
+            }
+            
+            NSString *price = [dict objectForKey:@"price"];
+            
+            if(price != nil) {
+                theDish.price = price;
+            } else {
+                theDish.price =@"";
+                NSLog(@"I could not parse price");
+            }
+            
+            [self.dishesArray addObject:theDish];
+        }
+        
+        NSLog(@"the number of restaurants is %ld", self.dishesArray.count);
+        
+        for(Dish *d in self.dishesArray) {
+            NSLog(@"the dish name is %@", d.name);
+        }
+        
+        
+        
+        
         
         NSString *name = [dict objectForKey:@"name"];
         
@@ -124,70 +187,7 @@
         
         
         
-        
-        
-        self.dishesArray = [[NSMutableArray alloc] init];
-        
-        NSArray *jsonArray = [theDictionary objectForKey:@"dishes"];
-        
-        for(NSDictionary *dict in jsonArray) {
             
-            Dish *theDish = [[Dish alloc] init];
-            
-            
-            NSString *name = [dict objectForKey:@"name"];
-            
-            if(name != nil) {
-                theDish.name = name;
-            } else {
-                theDish.name =@"";
-                NSLog(@"I could not parse name");
-            }
-            
-            NSString *dishdescription = [dict objectForKey:@"dishdescription"];
-            
-            if(dishdescription != nil) {
-                theDish.dishdescription = dishdescription;
-            } else {
-                theDish.dishdescription =@"";
-                NSLog(@"I could not parse dishdescription");
-            }
-            
-            NSString *rating = [dict objectForKey:@"rating"];
-            
-            if(rating != nil) {
-                theDish.rating = rating;
-            } else {
-                theDish.rating =@"";
-                NSLog(@"I could not parse rating");
-            }
-            
-            NSString *image = [dict objectForKey:@"image"];
-            
-            if(image != nil) {
-                theDish.image = image;
-            } else {
-                theDish.image =@"";
-                NSLog(@"I could not parse image");
-            }
-            
-            NSString *price = [dict objectForKey:@"price"];
-            
-            if(price != nil) {
-                theDish.price = price;
-            } else {
-                theDish.price =@"";
-                NSLog(@"I could not parse price");
-            }
-            
-            [self.dishesArray addObject:theDish];
-        }
-        
-        NSLog(@"the number of restaurants is %ld", self.dishesArray.count);
-        
-        for(Dish *d in self.dishesArray) {
-            NSLog(@"the dish name is %@", d.name);
-        }
     }
 }
 
@@ -224,23 +224,21 @@
     return jsonDictionary;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
-}
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    RestaurantTableViewCell *cell = (restaurantViewController *)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    cell.textLabel.text =@"Test";
+    Restaurant *theRestaurant = [self.restrauntsArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = theRestaurant.name;
     
     return cell;
     
 }
 
-
-
-
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.restrauntsArray.count;
+}
 
 
 @end

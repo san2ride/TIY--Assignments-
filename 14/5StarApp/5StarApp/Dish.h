@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *dishdescription;
 @property (strong, nonatomic) NSString *rating;
-@property (strong, nonatomic) NSString *image;
+@property (strong, nonatomic) NSString *imageNameString;
 @property (strong, nonatomic) NSString *price;
 
 @end
