@@ -172,7 +172,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="iod-pv-zUr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="259" y="-2205"/>
+            <point key="canvasLocation" x="243" y="-1389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R4J-ch-3Ko">
