@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ubU-m2-s1q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hero Table View Controller-->
+        <scene sceneID="mW3-8f-fS5">
+            <objects>
+                <tableViewController id="Aol-rE-485" customClass="HeroTableViewController" customModule="HeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="206" sectionHeaderHeight="28" sectionFooterHeight="28" id="91b-2p-7v9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="206" id="sh5-Qf-V55" customClass="HeroTableViewCell" customModule="HeroApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="206"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sh5-Qf-V55" id="nBa-V9-LuY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="205"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VXc-X1-Tlf">
+                                            <rect key="frame" x="8" y="8" width="140" height="189"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="Fda-Uy-c3q"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRy-dl-H5d">
+                                            <rect key="frame" x="156" y="92" width="428" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WRy-dl-H5d" firstAttribute="leading" secondItem="VXc-X1-Tlf" secondAttribute="trailing" constant="8" id="X76-dy-Vpg"/>
+                                        <constraint firstItem="VXc-X1-Tlf" firstAttribute="leading" secondItem="nBa-V9-LuY" secondAttribute="leading" constant="8" id="ZMC-qF-vMf"/>
+                                        <constraint firstAttribute="bottom" secondItem="VXc-X1-Tlf" secondAttribute="bottom" constant="8" id="fVn-vW-f4d"/>
+                                        <constraint firstItem="VXc-X1-Tlf" firstAttribute="top" secondItem="nBa-V9-LuY" secondAttribute="top" constant="8" id="w1H-Pm-pr1"/>
+                                        <constraint firstItem="WRy-dl-H5d" firstAttribute="centerY" secondItem="nBa-V9-LuY" secondAttribute="centerY" id="x4m-Ht-DRP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="WRy-dl-H5d" secondAttribute="trailing" constant="8" id="xWG-Z3-aTC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="heroImageView" destination="VXc-X1-Tlf" id="h33-Rm-iUg"/>
+                                    <outlet property="nameLabel" destination="WRy-dl-H5d" id="VyZ-5U-sJj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Aol-rE-485" id="mP9-HD-2dW"/>
+                            <outlet property="delegate" destination="Aol-rE-485" id="Yy2-yd-e3I"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Aox-Nu-QYc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ro0-Th-Oda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="-504"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zet-Tt-wVq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ubU-m2-s1q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lpP-xf-dKw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Aol-rE-485" kind="relationship" relationship="rootViewController" id="F9b-Fk-IBB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5oq-5l-Ape" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="-504"/>
+        </scene>
+    </scenes>
+</document>
