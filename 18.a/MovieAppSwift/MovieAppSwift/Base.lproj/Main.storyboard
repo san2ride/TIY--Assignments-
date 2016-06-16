@@ -14,10 +14,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fnT-Ub-Fww">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="fnT-Ub-Fww">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" tableViewCell="fnT-Ub-Fww" id="M91-zM-Mey">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fnT-Ub-Fww" id="M91-zM-Mey">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -73,6 +73,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bjZ-h9-29I" secondAttribute="bottom" constant="41" id="gR0-wS-6jx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="posterView" destination="ILf-4m-GJD" id="nrw-K4-LC2"/>
+                        <outlet property="titleLabel" destination="bjZ-h9-29I" id="5my-z8-zGn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
