@@ -56,37 +56,37 @@ class MovieTableViewController: UITableViewController {
                                     print("Could not parse overview string")
                                 }
                                 
-                                if let releaseDate = dict["releaseDate"] as? String {
+                                if let releaseDate = dict["release_date"] as? String {
                                     theMovie.releaseDate = releaseDate
                                 } else {
                                     print("Could not parse the releaseDate")
                                 }
                                 
-                                if let muviId = dict["muviId"] as? Int {
+                                if let muviId = dict["id"] as? Int {
                                     theMovie.muviId = muviId
                                 } else {
-                                    print("Could not parse muviId string")
+                                    print("Could not parse Id string")
                                 }
                                 
-                                if let originalTitle = dict["originalTitle"] as? String {
+                                if let originalTitle = dict["original_title"] as? String {
                                     theMovie.originalTitle = originalTitle
                                 } else {
                                     print("Could not parse the originalTitle")
                                 }
                                 
-                                if let originalLanguage = dict["originalLanguage"] as? String {
+                                if let originalLanguage = dict["original_language"] as? String {
                                     theMovie.originalLanguage = originalLanguage
                                 } else {
                                     print("Could not parse originalLanguage string")
                                 }
                                 
-                                if let title = dict["original_title"] as? String {
+                                if let title = dict["title"] as? String {
                                     theMovie.title = title
                                 } else {
                                     print("Could not parse title string")
                                 }
                                 
-                                if let backdropPath = dict["backdropPath"] as? String {
+                                if let backdropPath = dict["backdrop_path"] as? String {
                                     theMovie.backdropPath = backdropPath
                                 } else {
                                     print("Could not parse title string")
@@ -98,7 +98,7 @@ class MovieTableViewController: UITableViewController {
                                     print("Could not parse the popularity")
                                 }
                                 
-                                if let voteCount = dict["voteCount"] as? Int {
+                                if let voteCount = dict["vote_count"] as? Int {
                                     theMovie.voteCount = voteCount
                                 } else {
                                     print("Could not parse voteCount string")
@@ -110,7 +110,7 @@ class MovieTableViewController: UITableViewController {
                                     print("Could not parse the video")
                                 }
                                 
-                                if let voteAverage = dict["voteAverage"] as? Double {
+                                if let voteAverage = dict["vote_average"] as? Double {
                                     theMovie.voteAverage = voteAverage
                                 } else {
                                     print("Could not parse the poster path")
@@ -136,7 +136,7 @@ class MovieTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
        
-        return 1
+        return 13
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -144,20 +144,20 @@ class MovieTableViewController: UITableViewController {
         return self.moviesArray.count
     }
 
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        
-//        
-//        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PosterViewController
-//        
-//        let movie = moviesArray[indexPath.row]
-//        
-//        cell.titleLabel.text = movie.name
-//        
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+    
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        
+        let movie = moviesArray[indexPath.row]
+        
+        cell.textLabel?.text = movie.title
+        
 //        cell.posterView.image = UIImage(named: movie.imageName)
-//
-//
-//        return cell
-//    }
+
+
+        return cell
+    }
  
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if let segue.identifier isEqualToString: "moviePosterSegue"
@@ -180,5 +180,5 @@ class MovieTableViewController: UITableViewController {
     
 }
 
- 
+
 
