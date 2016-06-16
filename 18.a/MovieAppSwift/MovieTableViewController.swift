@@ -136,7 +136,7 @@ class MovieTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
        
-        return 13
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -159,7 +159,26 @@ class MovieTableViewController: UITableViewController {
         return cell
     }
  
- 
- 
- 
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if let segue.identifier isEqualToString: "moviePosterSegue"
+//        
+//        PosterViewController = segue.destinationViewController()
+//        
+//        controller.theMovie = self.currentMovie()
+//    }
+//
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        NSLog("didSelectRow", indexPath.row)
+//        
+//        self.currentMovie = self.moviesArray objectAtIndex:indexPath.row
+//        NSLog(self.currentMovie.)
+//        self.performSegueWithIdentifier:"moviePosterSegue"
+//        
+//        
+//    }
+    
+    
 }
+
+ 
+

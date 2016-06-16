@@ -29,9 +29,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="iQa-Bp-qWF"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="moviePosterSegue" id="Sol-HX-TK5"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsJ-VZ-LBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
