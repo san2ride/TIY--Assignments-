@@ -144,20 +144,20 @@ class MovieTableViewController: UITableViewController {
         return self.moviesArray.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PosterViewController
-        
-        let movie = moviesArray[indexPath.row]
-        
-        cell.titleLabel.text = movie.name
-        
-        cell.posterView.image = UIImage(named: movie.imageName)
-
-
-        return cell
-    }
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        
+//        
+//        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PosterViewController
+//        
+//        let movie = moviesArray[indexPath.row]
+//        
+//        cell.titleLabel.text = movie.name
+//        
+//        cell.posterView.image = UIImage(named: movie.imageName)
+//
+//
+//        return cell
+//    }
  
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if let segue.identifier isEqualToString: "moviePosterSegue"
