@@ -1,0 +1,86 @@
+{
+  "restaurants": [
+    {
+      "name": "Flying Sumo",
+      "description": "Restaurant, Japanese",
+      "imageNameString": "flyingSumo",
+      "address": "838 Park Ave",
+      "city" : "Park City",
+      "state": "UT",
+      "zip": "84060",
+      "latitude": -111.5010365,
+      "longitude": 40.6475648,
+      "menuName": "flyingSumo",
+      "dishes": [
+            {
+              "name": "Sake",
+              "description": "Salmon Nigiri Sushi",
+              "rating": 0,
+              "imageNameString": "sakeSalmon",
+              "price": 7.00
+            },
+            {
+              "name": "Maguro",
+              "description": "Bluefin Tuna Sashimi",
+              "rating": 0,
+              "imageNameString": "maguroSashimi",
+              "price": 18.0
+            },
+            {
+              "name": "Spicy Tuna",
+              "description": "Tuna,‎ green leaf, cucumber, sprout and spicy mayo",
+              "rating": 0,
+              "imageNameString": "spicyTuna",
+              "price": 12.0
+            },
+            {
+              "name": "Shrimp Tempura Roll",
+              "description": "Shrimp tempura, avocado, cucumber and spicy mayo",
+              "rating": 0,
+              "imageNameString": "shrimpTempura",
+              "price": 10.0
+            },
+            {
+              "name": "Yuki Yama Sushi",
+              "description": "Restaurant, Japanese",
+              "imageNameString": "yukiYama",
+              "address": "586 Main St",
+              "city" : "Park City",
+              "state": "UT",
+              "zip": "84060",
+              "latitude": -111.4988822,
+              "longitude": 40.6456343,
+              "menuName": "yukiYama",
+              "dishes": [
+                    {
+                      "name": "Hamachi",
+                      "description": "Yellow Tail Nigiri Sushi",
+                      "rating": 0,
+                      "imageNameString": "hamachiYellowtail",
+                      "price": 7.95
+                    },
+                    {
+                      "name": "Ebi",
+                      "description": "Sweet Shrimp Sashimi",
+                      "rating": 0,
+                      "imageNameString": "shrimpSashimi",
+                      "price": 10.95
+                    },
+                    {
+                      "name": "Mushroom Saute",
+                      "description": "local mushroom sauté, dashi-butter, poached egg, toasted pine nuts ",
+                      "rating": 0,
+                      "imageNameString": "mushroomSaute",
+                      "price": 13.95
+                    },
+                    {
+                      "name": "Pork Ramen",
+                      "description": "kurobuta pork belly, green onion, poached egg, kamaboko (japanese fish cake), house-made ramen broth",
+                      "rating": 0,
+                      "imageNameString": "porkRamen",
+                      "price": 15.95
+                    }
+                ]
+          }
+        ]
+      }

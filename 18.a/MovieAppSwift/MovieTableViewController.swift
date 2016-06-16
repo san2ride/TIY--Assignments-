@@ -62,7 +62,7 @@ class MovieTableViewController: UITableViewController {
                                     print("Could not parse the releaseDate")
                                 }
                                 
-                                if let muviId = dict["muviId"] as? NSInteger {
+                                if let muviId = dict["muviId"] as? Int {
                                     theMovie.muviId = muviId
                                 } else {
                                     print("Could not parse muviId string")
@@ -98,7 +98,7 @@ class MovieTableViewController: UITableViewController {
                                     print("Could not parse the popularity")
                                 }
                                 
-                                if let voteCount = dict["voteCount"] as? NSInteger {
+                                if let voteCount = dict["voteCount"] as? Int {
                                     theMovie.voteCount = voteCount
                                 } else {
                                     print("Could not parse voteCount string")

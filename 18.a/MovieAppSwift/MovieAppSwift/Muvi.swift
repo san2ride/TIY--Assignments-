@@ -8,19 +8,18 @@
 
 import Foundation
 class Movie {
-    var posterPath: NSString = ""
+    var posterPath: String = ""
     var adult: Bool = false
-    var overview: NSString = ""
-    var releaseDate: NSString = ""
-    var muviId: NSInteger = 0
-    var originalTitle: NSString = ""
-    var originalLanguage: NSString = ""
-    var title: NSString = ""
-    var backdropPath: NSString = ""
+    var overview: String = ""
+    var releaseDate: String = ""
+    var muviId: Int = 0
+    var originalTitle: String = ""
+    var originalLanguage: String = ""
+    var title: String = ""
+    var backdropPath: String = ""
     var popularity: Double = 0
-    var voteCount: NSInteger = 0
+    var voteCount: Int = 0
     var video: Bool = true
     var voteAverage: Double = 0
-    
     
 }

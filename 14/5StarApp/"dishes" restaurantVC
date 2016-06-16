@@ -1,0 +1,59 @@
+for(NSDictionary *dishDict in dishesJSONArray) {
+
+            Dish *theDish = [[Dish alloc] init];
+
+        NSString *name = [dishDict objectForKey:@"name"];
+
+        NSString *name = [dict objectForKey:@"name"];
+
+                  if(name != nil) {
+                      theDish.name = name;
+                  } else {
+                      theDish.name =@"";
+                      NSLog(@"I could not parse name");
+                  }
+
+                  NSString *dishdescription = [dict objectForKey:@"dishdescription"];
+
+                  if(dishdescription != nil) {
+                      theDish.dishdescription = dishdescription;
+                  } else {
+                      theDish.dishdescription =@"";
+                      NSLog(@"I could not parse dishdescription");
+                  }
+
+                  NSString *rating = [dict objectForKey:@"rating"];
+
+                  if(rating != nil) {
+                      theDish.rating = rating;
+                  } else {
+                      theDish.rating =@"";
+                      NSLog(@"I could not parse rating");
+                  }
+
+                  NSString *imageNameString = [dict objectForKey:@"image"];
+
+                  if(imageNameString != nil) {
+                      theDish.imageNameString = imageNameString;
+                  } else {
+
+                      NSLog(@"I could not parse image");
+                  }
+
+                  NSString *price = [dict objectForKey:@"price"];
+
+                  if(price != nil) {
+                      theDish.price = price;
+                  } else {
+                      theDish.price =@"";
+                      NSLog(@"I could not parse price");
+                  }
+
+                  [self.dishesArray addObject:theDish];
+              }
+
+              NSLog(@"the number of restaurants is %ld", self.dishesArray.count);
+
+              for(Dish *d in self.dishesArray) {
+                  NSLog(@"the dish name is %@", d.name);
+              }
