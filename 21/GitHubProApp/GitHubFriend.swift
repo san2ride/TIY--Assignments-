@@ -75,7 +75,7 @@ class GitHubFriend: NSObject {
         if let createdAT = jsonDict["created_at"] as? String {
             
             let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
             
             self.createdAT = dateFormatter.dateFromString(createdAT)!
             

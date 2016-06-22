@@ -13,11 +13,23 @@ protocol GithubAPIDelegate: class {
     
 }
 
-class ProViewController: UIViewController
-//    ,GithubAPIDelegate
+class ProViewController: UIViewController, GithubAPIDelegate
 {
 
     @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var followLabel: UILabel!
+    
+    @IBOutlet weak var followerLabel: UILabel!
+    
+    @IBOutlet weak var repoLabel: UILabel!
+    
+    @IBOutlet weak var gistLabel: UILabel!
+    
     
     let apiController = APIController()
     var imageURLString : String = ""
@@ -25,15 +37,14 @@ class ProViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.apiController.delegate = self
+        self.apiController.delegate = self
         
         print("I just called viewDidload")
         
         self.apiController.fetchGithubuser("san2ride")
-        
-        
-        
-    func passDict(dict: JSONDictionary) {
+    
+    
+        func passDict(dict: JSONDictionary) {
             
             print("I am in the view controller")
             
@@ -51,7 +62,7 @@ class ProViewController: UIViewController
         
     }
         
-    func getImageFromURLString(urlString: String) {
+        func getImageFromURLString(urlString: String) {
         
         if let url = NSURL(string: urlString) {
             
@@ -83,6 +94,9 @@ class ProViewController: UIViewController
         
         
     }
-
-
+    
+    
+    
+    
 }
+

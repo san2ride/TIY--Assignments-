@@ -10,6 +10,7 @@ import UIKit
 
 class APIController: NSObject
 {
+    weak var delegate: GithubAPIDelegate?
     
     func fetchGithubuser(username: String) {
         
