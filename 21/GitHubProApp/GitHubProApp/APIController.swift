@@ -20,6 +20,7 @@ class APIController: NSObject
             let session = NSURLSession.sharedSession()
             
             let task = session.dataTaskWithURL(url, completionHandler: {
+                
                 (data, response, error) in
                 
                 if error != nil {
@@ -30,12 +31,12 @@ class APIController: NSObject
                 if let data = data {
                     
                     
-                    if let jsonDictionary = self.parseJSON(data) {
+                    if let jsonDict = self.parseJSON(data) {
                         
-                        print(jsonDictionary)
+                        print(jsonDict)
                         
                     } else {
-                        print("cant parse the jsonDictionary")
+                        print("cant parse the jsonDict")
                     }
                 
                     
@@ -60,12 +61,12 @@ class APIController: NSObject
         if let data = data {
             do {
                 
-                if let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? JSONDictionary {
+                if let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? JSONDictionary {
                     
                     
-                    theDictionary = jsonDictionary
+                    theDictionary = jsonDict
                     
-                    //print(jsonDictionary)
+                    //print(jsonDict)
                     
                     
                 } else {

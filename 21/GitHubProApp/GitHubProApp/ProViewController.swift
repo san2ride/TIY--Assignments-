@@ -13,18 +13,19 @@ protocol GithubAPIDelegate: class {
     
 }
 
-class ProViewController: UIViewController, GithubAPIDelegate {
+class ProViewController: UIViewController
+//    ,GithubAPIDelegate
+{
 
     @IBOutlet weak var imageView: UIImageView!
     
     let apiController = APIController()
-
     var imageURLString : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.apiController.delegate = self
+//        self.apiController.delegate = self
         
         print("I just called viewDidload")
         
@@ -32,7 +33,7 @@ class ProViewController: UIViewController, GithubAPIDelegate {
         
         
         
-    func passDictionary(dict: JSONDictionary) {
+    func passDict(dict: JSONDictionary) {
             
             print("I am in the view controller")
             

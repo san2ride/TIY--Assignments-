@@ -45,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AC56D81D19C581005A62CF /* GitHubProApp */,
+				A4AC56F81D1A435B005A62CF /* Supporting Files */,
 				A4AC56D71D19C581005A62CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,15 +61,11 @@
 		A4AC56D81D19C581005A62CF /* GitHubProApp */ = {
 			isa = PBXGroup;
 			children = (
-				A4AC56F01D19C672005A62CF /* Constants.swift */,
-				A4AC56D91D19C581005A62CF /* AppDelegate.swift */,
 				A4AC56ED1D19C62C005A62CF /* Modals */,
 				A4AC56EF1D19C654005A62CF /* Views */,
 				A4AC56EE1D19C63E005A62CF /* Controllers */,
 				A4AC56DD1D19C581005A62CF /* Main.storyboard */,
-				A4AC56E01D19C581005A62CF /* Assets.xcassets */,
-				A4AC56E21D19C581005A62CF /* LaunchScreen.storyboard */,
-				A4AC56E51D19C581005A62CF /* Info.plist */,
+				A4AC56F01D19C672005A62CF /* Constants.swift */,
 			);
 			path = GitHubProApp;
 			sourceTree = "<group>";
@@ -96,6 +93,18 @@
 			children = (
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		A4AC56F81D1A435B005A62CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4AC56D91D19C581005A62CF /* AppDelegate.swift */,
+				A4AC56E01D19C581005A62CF /* Assets.xcassets */,
+				A4AC56E21D19C581005A62CF /* LaunchScreen.storyboard */,
+				A4AC56E51D19C581005A62CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = GitHubProApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
