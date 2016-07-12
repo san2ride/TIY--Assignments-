@@ -10,7 +10,6 @@ import UIKit
 
 class OuttaViewController: UIViewController, UITextFieldDelegate {
     
-    
     @IBOutlet weak var timeText: UITextField!
     
     @IBOutlet weak var presentTimeLabel: UILabel!
@@ -23,28 +22,29 @@ class OuttaViewController: UIViewController, UITextFieldDelegate {
     let formattedDate = NSDateFormatter()
     var milesPerHour = 0
     var timer:NSTimer?
-    
-    
+    var speed:Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         formattedDate.dateFormat = "MMM d, yyyy"
         let today : NSDate = NSDate()
         self.presentTimeLabel.text = formattedDate.stringFromDate(today)
         
     }
-        
-    func enteredDate()
-    {
+    
+    func dateEnter() {
+    
         formattedDate.dateFormat = "MMM d, yyyy"
         if let dateEnter = self.timeText.text {
             
-        if let theDate = formattedDate.dateFromString(dateEnter) {
+            if let theDate = formattedDate.dateFromString(dateEnter) {
                 formattedDate.dateFormat = "MMM d, yyyy"
                 self.timeText.text = self.formattedDate.stringFromDate(theDate)
-           }
+            }
+    
         }
+    
     }
     
     func updateMiles() {
@@ -53,60 +53,47 @@ class OuttaViewController: UIViewController, UITextFieldDelegate {
             self.timer?.invalidate()
             self.performSegueWithIdentifier("timeSegue", sender: self)
             
-    }
+        }
         self.currentSpeed.text = "\(milesPerHour) MPH"
-    
-    }
-    
-    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        reset
         
     }
-
+   
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        
+       return
+        
+    }
+    
     @IBAction func travelBack(sender: UIButton) {
         self.performSegueWithIdentifier("timeSegue", sender: nil)
         
         self.lastTimeLabel.text = self.timeText.text
         self.milesPerHour = 0
         let speed = 0.1
-    }
-    
-    func reset {
-        self.timeText.text = "--- -- ----"
-        self.currentSpeed.text
-        milesPerHour = 0
-        self.speedometer.text = "0 MPH"
-    
-    }
-    
-    func updateMiles() {
-        self.milesPerHour += 1
-       
-        if milesPerHour == 88 {
-            self.timer?.invalidate()
-        }
-        self.currentSpeed.text = "\(milesPerHour) MPH"
-    
-    
-    }
-    
-    self.timer = NSTimer.scheduledTimerWithTimeInterval(speed,
-                                                               target: self,
-                                                             selector: #selector(updateMiles),
-                                                             userInfo: nil,
-                                                              repeats: true)
-
-    }
-
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-    dateEnter()
         
-    self.timeText.resignFirstResponder()
-    
-    return true
     }
+    
+    func reset() {
+        self.timeText.text = "--- -- ----"
+        self.currentSpeed.text = "\(milesPerHour) MPH"
+        milesPerHour = 0
+//        self.speedometer.text = "0 MPH"
+        
+    }
+   
+        func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        
+        self.timeText.resignFirstResponder()
+        
+        return true
+    }
+    
+}
 
 
 
 
 
+
+    

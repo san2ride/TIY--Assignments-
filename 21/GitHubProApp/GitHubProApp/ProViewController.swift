@@ -9,7 +9,7 @@
 import UIKit
 
 protocol GithubAPIDelegate: class {
-    func passDict(dict: JSONDictionary)
+    func passDict(jsonDict: JSONDictionary)
     
 }
 
@@ -44,11 +44,11 @@ class ProViewController: UIViewController, GithubAPIDelegate
         self.apiController.fetchGithubuser("san2ride")
     
     
-        func passDict(dict: JSONDictionary) {
+        func passDict(jsonDict: JSONDictionary) {
             
             print("I am in the view controller")
             
-            if let avatarURL = dict["avatar_url"] as? String {
+            if let avatarURL = jsonDict["avatar_url"] as? String {
                 
                 self.imageURLString = avatarURL
                 
