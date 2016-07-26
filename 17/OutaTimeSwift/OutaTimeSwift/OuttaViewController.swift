@@ -10,19 +10,18 @@ import UIKit
 
 class OuttaViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var timeText: UITextField!
-    
     @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastTimeDepartedLabel: UILabel!
+    @IBOutlet weak var destinationTimeLabel: UILabel!
     
-    @IBOutlet weak var lastTimeLabel: UILabel!
-    
-    @IBOutlet weak var currentSpeed: UILabel!
+    @IBOutlet weak var timeTextField: UITextField!
     
     
     let formattedDate = NSDateFormatter()
     var milesPerHour = 0
     var timer:NSTimer?
-    var speed:Double = 0.0
+    var currentSpeed:Double = 0.0
+    var speedometer: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +35,11 @@ class OuttaViewController: UIViewController, UITextFieldDelegate {
     func dateEnter() {
     
         formattedDate.dateFormat = "MMM d, yyyy"
-        if let dateEnter = self.timeText.text {
+        if let dateEnter = self.timeTextField.text {
             
             if let theDate = formattedDate.dateFromString(dateEnter) {
                 formattedDate.dateFormat = "MMM d, yyyy"
-                self.timeText.text = self.formattedDate.stringFromDate(theDate)
+                self.timeTextField.text = self.formattedDate.stringFromDate(theDate)
             }
     
         }
@@ -54,7 +53,7 @@ class OuttaViewController: UIViewController, UITextFieldDelegate {
             self.performSegueWithIdentifier("timeSegue", sender: self)
             
         }
-        self.currentSpeed.text = "\(milesPerHour) MPH"
+//        self.currentSpeed.text = "\(milesPerHour) MPH"
         
     }
    
@@ -65,26 +64,26 @@ class OuttaViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func travelBack(sender: UIButton) {
-        self.performSegueWithIdentifier("timeSegue", sender: nil)
+//        self.performSegueWithIdentifier("timeSegue", sender: nil)
         
-        self.lastTimeLabel.text = self.timeText.text
+        self.lastTimeDepartedLabel.text = self.timeTextField.text
         self.milesPerHour = 0
         let speed = 0.1
         
     }
     
     func reset() {
-        self.timeText.text = "--- -- ----"
-        self.currentSpeed.text = "\(milesPerHour) MPH"
+        self.timeTextField.text = "--- -- ----"
+//        self.currentSpeed.text = "\(milesPerHour) MPH"
         milesPerHour = 0
-//        self.speedometer.text = "0 MPH"
+        let speedometer = "0 MPH"
         
     }
    
         func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         
-        self.timeText.resignFirstResponder()
+        self.timeTextField.resignFirstResponder()
         
         return true
     }

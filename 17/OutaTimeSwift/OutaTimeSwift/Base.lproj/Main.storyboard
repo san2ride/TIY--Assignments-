@@ -174,10 +174,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="fMe-qy-Bji"/>
                     <connections>
-                        <outlet property="currentSpeed" destination="pQr-7g-YCM" id="IoE-Gs-G3B"/>
-                        <outlet property="lastTimeLabel" destination="P3F-rz-X4K" id="hak-bv-aCp"/>
-                        <outlet property="presentTimeLabel" destination="sGs-ug-Eio" id="DQ4-7Y-peg"/>
-                        <outlet property="timeText" destination="nee-Qm-1YG" id="BOm-iy-2X5"/>
+                        <outlet property="destinationTimeLabel" destination="QPh-WF-jiI" id="YlA-XY-HSa"/>
+                        <outlet property="lastTimeDepartedLabel" destination="P3F-rz-X4K" id="T7K-bL-GLI"/>
+                        <outlet property="presentTimeLabel" destination="dAh-30-OLE" id="ayZ-aU-Zdn"/>
+                        <outlet property="timeTextField" destination="nee-Qm-1YG" id="yqy-lb-0Ar"/>
                         <segue destination="HUc-FQ-XKv" kind="presentation" identifier="timeSegue" id="Ts3-hT-Pvt"/>
                     </connections>
                 </viewController>

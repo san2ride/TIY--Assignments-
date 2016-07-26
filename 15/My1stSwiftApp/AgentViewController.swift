@@ -30,7 +30,7 @@ class AgentViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func authTapped(sender: UIButton) {
 
-        if (self.userTextField?.text == "Sanchez") && (self.passTextField?.text == "password") {
+        if (self.userTextField?.text == "Sanchez") && (self.passTextField?.text == "Jason") {
         
                 self.view.backgroundColor = UIColor.greenColor()
                 self.greetingLabel.text = "Good Evening, Jason"
