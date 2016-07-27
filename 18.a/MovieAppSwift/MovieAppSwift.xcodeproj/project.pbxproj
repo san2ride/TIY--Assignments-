@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A456983C1D4898F300247D8E /* muviTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A456983B1D4898F300247D8E /* muviTableViewCell.swift */; };
 		A4B3B1761D11FD36008F4FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3B1751D11FD36008F4FA6 /* AppDelegate.swift */; };
 		A4B3B17B1D11FD36008F4FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B3B1791D11FD36008F4FA6 /* Main.storyboard */; };
 		A4B3B17D1D11FD36008F4FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B3B17C1D11FD36008F4FA6 /* Assets.xcassets */; };
@@ -14,10 +15,11 @@
 		A4B3B18D1D11FE05008F4FA6 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3B18C1D11FE05008F4FA6 /* MovieTableViewController.swift */; };
 		A4B3B1911D11FE52008F4FA6 /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3B1901D11FE52008F4FA6 /* PosterViewController.swift */; };
 		A4B3B1931D11FEB6008F4FA6 /* popular.json in Resources */ = {isa = PBXBuildFile; fileRef = A4B3B1921D11FEB6008F4FA6 /* popular.json */; };
-		A4B3B1BC1D1245CA008F4FA6 /* Muvi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3B1BB1D1245CA008F4FA6 /* Muvi.swift */; };
+		A4B3B1BC1D1245CA008F4FA6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3B1BB1D1245CA008F4FA6 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A456983B1D4898F300247D8E /* muviTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = muviTableViewCell.swift; sourceTree = "<group>"; };
 		A4B3B1721D11FD36008F4FA6 /* MovieAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B3B1751D11FD36008F4FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B3B17A1D11FD36008F4FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 		A4B3B18C1D11FE05008F4FA6 /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieTableViewController.swift; path = ../MovieTableViewController.swift; sourceTree = "<group>"; };
 		A4B3B1901D11FE52008F4FA6 /* PosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PosterViewController.swift; path = ../PosterViewController.swift; sourceTree = "<group>"; };
 		A4B3B1921D11FEB6008F4FA6 /* popular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = popular.json; sourceTree = "<group>"; };
-		A4B3B1BB1D1245CA008F4FA6 /* Muvi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Muvi.swift; sourceTree = "<group>"; };
+		A4B3B1BB1D1245CA008F4FA6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 		A4B3B1881D11FD63008F4FA6 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
-				A4B3B1BB1D1245CA008F4FA6 /* Muvi.swift */,
+				A4B3B1BB1D1245CA008F4FA6 /* Movie.swift */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -93,6 +95,7 @@
 		A4B3B1891D11FD6D008F4FA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A456983B1D4898F300247D8E /* muviTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -129,7 +132,7 @@
 				TargetAttributes = {
 					A4B3B1711D11FD36008F4FA6 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 6D9CKTK39V;
+						DevelopmentTeam = 7QLQZLZHA6;
 					};
 				};
 			};
@@ -172,7 +175,8 @@
 			files = (
 				A4B3B1761D11FD36008F4FA6 /* AppDelegate.swift in Sources */,
 				A4B3B18D1D11FE05008F4FA6 /* MovieTableViewController.swift in Sources */,
-				A4B3B1BC1D1245CA008F4FA6 /* Muvi.swift in Sources */,
+				A4B3B1BC1D1245CA008F4FA6 /* Movie.swift in Sources */,
+				A456983C1D4898F300247D8E /* muviTableViewCell.swift in Sources */,
 				A4B3B1911D11FE52008F4FA6 /* PosterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

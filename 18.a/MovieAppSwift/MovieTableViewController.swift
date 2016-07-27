@@ -9,11 +9,15 @@
 import UIKit
 
 class MovieTableViewController: UITableViewController {
+    
+    
+    
+   
 
     typealias JSONDictionary = [String:AnyObject]
     typealias JSONArray = [JSONDictionary]
     var moviesArray = [Movie]()
-    
+    var currentMuvi: Movie?
     
     
     
@@ -134,10 +138,7 @@ class MovieTableViewController: UITableViewController {
     
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-       
-        return 13
-    }
+    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -147,35 +148,31 @@ class MovieTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
     
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! muviTableViewCell
         
-        let movie = moviesArray[indexPath.row]
+        let movie = self.moviesArray[indexPath.row]
         
-        cell.textLabel?.text = movie.title
+        cell.muviLabel.text = movie.title
+        cell.muviImageView.image = UIImage(named: movie.posterPath)
         
-//        cell.posterView.image = UIImage(named: movie.imageName)
-
-
         return cell
+        
     }
  
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if let segue.identifier isEqualToString: "moviePosterSegue"
-//        
-//        PosterViewController = segue.destinationViewController()
-//        
-//        controller.theMovie = self.currentMovie()
-//    }
-//
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        NSLog("didSelectRow", indexPath.row)
-//        
-//        self.currentMovie = self.moviesArray objectAtIndex:indexPath.row
-//        NSLog(self.currentMovie.)
-//        self.performSegueWithIdentifier:"moviePosterSegue"
-//        
-//        
-//    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.currentMuvi = self.moviesArray[indexPath.row]
+        
+        self.performSegueWithIdentifier("PosterSegue", sender: nil)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let controller = segue.destinationViewController as? PosterViewController
+        
+        controller?.theMovie = self.currentMuvi
+    }
     
     
 }
